@@ -1,16 +1,27 @@
-### Hi there 👋
+### Hi there👋. I'm Ho Vinh Tin
 
-<!--
-**VinhTin-AQUA/VinhTin-AQUA** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to my github profile
 
-Here are some ideas to get you started:
+I want to become a .NET developer
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🔭 I’m currently working on:
+
+- ![NET](https://img.shields.io/badge/NET-black?color=%23512BD4) NET Core MVC & NET Core API
+
+- ![GraphQL](https://img.shields.io/badge/graphql-%23E10098?logo=graphql)
+ GraphQL
+
+- ![Static Badge](https://img.shields.io/badge/typescript-%233178C6?logo=typescript&logoColor=white&label=%20)
+ TypeScript
+
+- ![Static Badge](https://img.shields.io/badge/angular-%23ef0813?logo=angular) Angular
+
+- ![Static Badge](https://img.shields.io/badge/tailwindcss-%2306B6D4?logo=tailwindcss&logoColor=white&label=%20)
+ Tailwind CSS & ![Static Badge](https://img.shields.io/badge/bootstrap-%237952B3?logo=bootstrap&logoColor=white&label=%20)
+ Bootstrap
+
+📫 How to reach me:
+
+
+
+
