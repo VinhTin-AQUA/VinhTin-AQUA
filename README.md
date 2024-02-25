@@ -4,7 +4,7 @@ Welcome to my github profile
 
 I want to become a .NET developer
 
-### 🔭 I’m currently working on:
+### 🔭 My works:
 
 - ![NET](https://img.shields.io/badge/NET-black?color=%23512BD4) NET Core MVC & NET Core API
 
