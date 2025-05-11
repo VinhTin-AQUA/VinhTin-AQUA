@@ -49,12 +49,7 @@
 
 ### 🧪 Other Technologies I've Used
 
-<img src="https://img.shields.io/badge/Kafka-%23231F20?style=for-the-badge&logo=apachekafka"/> 
-<img src="https://img.shields.io/badge/Graphql-%23E10098?style=for-the-badge&logo=graphql"/> 
-<img src="https://img.shields.io/badge/Python-%23fff?style=for-the-badge&logo=python"/> 
-<img src="https://img.shields.io/badge/Flutter-%2302569B?style=for-the-badge&logo=flutter"/> 
-<img src="https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=Dart"/> 
-<img src="https://img.shields.io/badge/MinIO-%23C72E49?style=for-the-badge&logo=MinIO"/>
+<img src="https://img.shields.io/badge/Kafka-%23231F20?style=for-the-badge&logo=apachekafka"/> <img src="https://img.shields.io/badge/Graphql-%23E10098?style=for-the-badge&logo=graphql"/> <img src="https://img.shields.io/badge/Python-%23fff?style=for-the-badge&logo=python"/> <img src="https://img.shields.io/badge/Flutter-%2302569B?style=for-the-badge&logo=flutter"/> <img src="https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=Dart"/> <img src="https://img.shields.io/badge/MinIO-%23C72E49?style=for-the-badge&logo=MinIO"/>
  
 ---
 
