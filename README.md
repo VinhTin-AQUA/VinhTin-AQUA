@@ -149,6 +149,6 @@ Video uploading and streaming application using public video streaming DASH
 
 ## 📫 Contact Me
 
-- Email: your.email@example.com  
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-- Portfolio: [yourportfolio.com](https://yourportfolio.com) (if available)
+- Email: tinhovinh@gmail.com  
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/ho-vinh-tin/)  
+- Portfolio: [Portfolio](https://newtun-code-cheat-sheet.is-a.dev/home)
