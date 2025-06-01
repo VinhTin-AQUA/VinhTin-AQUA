@@ -49,11 +49,19 @@
 
 ### 🧪 Other Technologies I've Used
 
-<img src="https://img.shields.io/badge/Kafka-%23231F20?style=for-the-badge&logo=apachekafka"/> <img src="https://img.shields.io/badge/Graphql-%23E10098?style=for-the-badge&logo=graphql"/> <img src="https://img.shields.io/badge/Python-%23fff?style=for-the-badge&logo=python"/> <img src="https://img.shields.io/badge/Flutter-%2302569B?style=for-the-badge&logo=flutter"/> <img src="https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=Dart"/> <img src="https://img.shields.io/badge/MinIO-%23C72E49?style=for-the-badge&logo=MinIO"/>
+<img src="https://img.shields.io/badge/Kafka-%23231F20?style=for-the-badge&logo=apachekafka"/> <img src="https://img.shields.io/badge/Graphql-%23E10098?style=for-the-badge&logo=graphql"/> <img src="https://img.shields.io/badge/Python-%23fff?style=for-the-badge&logo=python"/> <img src="https://img.shields.io/badge/Flutter-%2302569B?style=for-the-badge&logo=flutter"/> <img src="https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=Dart"/> <img src="https://img.shields.io/badge/MinIO-%23C72E49?style=for-the-badge&logo=MinIO"/> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" /> <img src="https://img.shields.io/badge/gRPC-0D7DB5?style=for-the-badge&logo=grpc&logoColor=white" />
  
 ---
 
 ## 🚀 Featured Projects
+
+### [🖥️ Video Streaming App](https://github.com/VinhTin-AQUA/Video-Streaming-App)
+
+```Video uploading and streaming application using public video streaming DASH```
+
+##### 🛠️ Techs: 
+
+<img src="https://img.shields.io/badge/Microservices-Architecture-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/gRPC-4285F4?style=for-the-badge&logo=grpc&logoColor=white" /> <img src="https://img.shields.io/badge/ASP.NET_Core_API-512BD4?style=for-the-badge&logo=.net&logoColor=white" /> <img src="https://img.shields.io/badge/ASP.NET_Core_gRPC-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" /> <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" /><img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" /><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /><img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" /> <img src="https://img.shields.io/badge/MinIO-CF2B2B?style=for-the-badge&logo=min.io&logoColor=white" />
 
 ### [💻 IDS RESNET 50 System](https://github.com/VinhTin-AQUA/IDS-RESNET-50-System)
 
@@ -61,17 +69,6 @@
 
 ##### 🛠️ Techs: 
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" /> <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" /> <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" /> <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-
-
-### [🖥️ Video Streaming App](https://github.com/VinhTin-AQUA/Video-Streaming-App)
-
-```
-Video uploading and streaming application using public video streaming DASH
-```
-
-##### 🛠️ Techs: 
-
-<img src="https://img.shields.io/badge/Microservices-Architecture-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/gRPC-4285F4?style=for-the-badge&logo=grpc&logoColor=white" /> <img src="https://img.shields.io/badge/ASP.NET_Core_API-512BD4?style=for-the-badge&logo=.net&logoColor=white" /> <img src="https://img.shields.io/badge/ASP.NET_Core_gRPC-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" /> <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" /><img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" /><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /><img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" /> <img src="https://img.shields.io/badge/MinIO-CF2B2B?style=for-the-badge&logo=min.io&logoColor=white" />
 
 
 ### [⬇️ Y2mate youtube downloader](https://github.com/VinhTin-AQUA/y2mate-youtube-downloader)
