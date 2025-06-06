@@ -119,5 +119,5 @@
 ## 📫 Contact Me
 
 - Email: tinhovinh@gmail.com  
-- LinkedIn: [Linkedin](https://www.linkedin.com/in/ho-vinh-tin/)  
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/tin-ho-vinh/)  
 - Portfolio: [Portfolio](https://newtun-code-cheat-sheet.is-a.dev/home)
