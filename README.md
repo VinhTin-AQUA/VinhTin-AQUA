@@ -88,8 +88,8 @@
 
 <div align="center">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=VinhTin-AQUA&show_icons=true&theme=radical&title_color=16a34a&custom_title=NewTun&hide_border=true&border_radius=12" height="180px"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinhTin-AQUA&size_weight=0.5&count_weight=0.5&layout=compact&hide_progress=true&theme=radical&hide_border=true&border_radius=12" height="180px"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=VinhTin-AQUA&show_icons=true&theme=radical&title_color=16a34a&custom_title=NewTun&hide_border=true&border_radius=12" style="height: 180px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinhTin-AQUA&size_weight=0.5&count_weight=0.5&layout=compact&hide_progress=true&theme=radical&hide_border=true&border_radius=12" style="height: 180px" />
 
 </div>
 
