@@ -11,14 +11,6 @@
 
 ---
 
-<picture>
-  <img src="https://github-readme-stats.vercel.app/api?username=VinhTin-AQUA&show_icons=true&theme=radical&title_color=16a34a&custom_title=NewTun&" />
-</picture>
-
-<picture>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinhTin-AQUA&size_weight=0.5&count_weight=0.5&layout=compact&hide_progress=true" />
-</picture>
-
 ## 🛠️ Skills & Technologies
 
 ### 🧰 Core Skills
