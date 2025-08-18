@@ -67,20 +67,22 @@
 
 -   Basic Rust knowledge, experienced in building cross-platform desktop applications with Tauri and Angular.
 
-<img src="https://img.shields.io/badge/Rust-%23000000?style=for-the-badge&logo=rust&logoColor=white" />
-<img src="https://img.shields.io/badge/Tauri-%2324C8DB?style=for-the-badge&logo=tauri&logoColor=white" />
-<img src="https://img.shields.io/badge/Angular-%23DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+    <img src="https://img.shields.io/badge/Rust-%23000000?style=for-the-badge&logo=rust&logoColor=white" />
+    <img src="https://img.shields.io/badge/Tauri-%2324C8DB?style=for-the-badge&logo=tauri&logoColor=white" />
+    <img src="https://img.shields.io/badge/Angular-%23DD0031?style=for-the-badge&logo=angular&logoColor=white" />
 
 ### 🧪 Other Technologies I've Used
 
-<img src="https://img.shields.io/badge/Kafka-%23231F20?style=for-the-badge&logo=apachekafka"/> 
-<img src="https://img.shields.io/badge/Graphql-%23E10098?style=for-the-badge&logo=graphql"/>
-<img src="https://img.shields.io/badge/Python-%23fff?style=for-the-badge&logo=python"/> 
-<img src="https://img.shields.io/badge/Flutter-%2302569B?style=for-the-badge&logo=flutter"/> 
-<img src="https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=Dart"/> 
-<img src="https://img.shields.io/badge/MinIO-%23C72E49?style=for-the-badge&logo=MinIO"/>
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" /> 
-<img src="https://img.shields.io/badge/gRPC-0D7DB5?style=for-the-badge&logo=grpc&logoColor=white" />
+<div>
+    <img src="https://img.shields.io/badge/Kafka-%23231F20?style=for-the-badge&logo=apachekafka"/> 
+    <img src="https://img.shields.io/badge/Graphql-%23E10098?style=for-the-badge&logo=graphql"/>
+    <img src="https://img.shields.io/badge/Python-%23fff?style=for-the-badge&logo=python"/> 
+    <img src="https://img.shields.io/badge/Flutter-%2302569B?style=for-the-badge&logo=flutter"/> 
+    <img src="https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=Dart"/> 
+    <img src="https://img.shields.io/badge/MinIO-%23C72E49?style=for-the-badge&logo=MinIO"/>
+    <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" /> 
+    <img src="https://img.shields.io/badge/gRPC-0D7DB5?style=for-the-badge&logo=grpc&logoColor=white" />
+</div>
 
 ---
 
@@ -88,8 +90,8 @@
 
 <div align="center">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=VinhTin-AQUA&show_icons=true&theme=radical&title_color=16a34a&custom_title=NewTun&hide_border=true&border_radius=12" style="height: 180px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinhTin-AQUA&size_weight=0.5&count_weight=0.5&layout=compact&hide_progress=true&theme=radical&hide_border=true&border_radius=12" style="height: 180px" />
+  <img src="https://github-readme-stats.vercel.app/api?username=VinhTin-AQUA&show_icons=true&theme=radical&title_color=16a34a&custom_title=NewTun&border_radius=12" style="height: 180px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinhTin-AQUA&size_weight=0.5&count_weight=0.5&layout=compact&hide_progress=true&theme=radical&border_radius=12&title_color=16a34a" style="height: 180px" />
 
 </div>
 
