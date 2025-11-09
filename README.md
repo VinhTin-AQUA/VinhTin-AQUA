@@ -133,25 +133,20 @@
     <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </div>
 
-### [⬇️ Y2mate youtube downloader](https://github.com/VinhTin-AQUA/y2mate-youtube-downloader)
 
-`Command line tool to download youtube videos using Y2MATE API`
+### [💸 Bill Insight](https://github.com/VinhTin-AQUA/IDS-RESNET-50-System)
 
-##### 🛠️ Techs:
-
-<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
-
-### [🐶 AdoptPet](https://github.com/VinhTin-AQUA/AdoptPet)
-
-`Pet management and search application using Asp Net Core API and Angular`
+`Smart Invoice Management on Google Sheets`
 
 ##### 🛠️ Techs:
 
 <div>
-    <img src="https://img.shields.io/badge/ASP.NET_Core_API-512BD4?style=for-the-badge&logo=.net&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
-    <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+<img src="https://img.shields.io/badge/Built%20with-Tauri-orange?logo=rust&style=for-the-badge" />
+<img src="https://img.shields.io/badge/Frontend-Angular-red?logo=angular&style=for-the-badge" />
+<img src="https://img.shields.io/badge/Style-TailwindCSS-38B2AC?logo=tailwindcss&style=for-the-badge" />
+<img src="https://img.shields.io/badge/API-Google%20Sheets-blue?logo=google&style=for-the-badge" />
 </div>
+
 
 ### [🖼️ Auto Scaling Image (CMD)](https://github.com/VinhTin-AQUA/Auto-Scaling-Image)
 
