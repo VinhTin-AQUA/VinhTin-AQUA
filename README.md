@@ -134,7 +134,7 @@
 </div>
 
 
-### [💸 Bill Insight](https://github.com/VinhTin-AQUA/IDS-RESNET-50-System)
+### [💸 Bill Insight](https://github.com/VinhTin-AQUA/Bill-Insight-V2)
 
 `Smart Invoice Management on Google Sheets`
 
