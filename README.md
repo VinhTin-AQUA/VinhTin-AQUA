@@ -17,59 +17,59 @@
 
 #### C# & ASP.NET Core (API, gRPC, MVC)
 
--   Build scalable RESTful APIs, real-time communication with gRPC, and web applications using MVC. Experienced in designing clean architecture and integrating with various data sources.
+- Build scalable RESTful APIs, real-time communication with gRPC, and web applications using MVC. Experienced in designing clean architecture and integrating with various data sources.
 
-    <img src="https://img.shields.io/badge/.NET-AspNetCore-%233b82f6?style=for-the-badge&logo=dotnet&logoColor=%23fff&labelColor=%233b82f6&color=white" />
+      <img src="https://img.shields.io/badge/.NET-AspNetCore-%233b82f6?style=for-the-badge&logo=dotnet&logoColor=%23fff&labelColor=%233b82f6&color=white" />
 
 #### SQL, MongoDB, Redis
 
--   Design relational (SQL) and NoSQL (MongoDB) databases. Use Redis for caching and performance improvement.
+- Design relational (SQL) and NoSQL (MongoDB) databases. Use Redis for caching and performance improvement.
 
-    <img src="https://img.shields.io/badge/SQL-%2360a5fa?style=for-the-badge" /> 
-    <img src="https://img.shields.io/badge/MongoDB-%23fff?style=for-the-badge&logo=mongodb" /> 
-    <img src="https://img.shields.io/badge/Redis-%23fff?style=for-the-badge&logo=Redis" />
+      <img src="https://img.shields.io/badge/SQL-%2360a5fa?style=for-the-badge" /> 
+      <img src="https://img.shields.io/badge/MongoDB-%23fff?style=for-the-badge&logo=mongodb" /> 
+      <img src="https://img.shields.io/badge/Redis-%23fff?style=for-the-badge&logo=Redis" />
 
 #### TypeScript, Angular, NestJS
 
--   Build full-featured frontend and backend applications with TypeScript. Good at structuring modular, scalable SPAs and microservices.
+- Build full-featured frontend and backend applications with TypeScript. Good at structuring modular, scalable SPAs and microservices.
 
-    <img src="https://img.shields.io/badge/TypeScript-%23fff?style=for-the-badge&logo=TypeScript" /> 
-    <img src="https://img.shields.io/badge/Angular-%230F0F11?style=for-the-badge&logo=Angular" /> 
-    <img src="https://img.shields.io/badge/NestJS-%23E0234E?style=for-the-badge&logo=nestjs" />
+      <img src="https://img.shields.io/badge/TypeScript-%23fff?style=for-the-badge&logo=TypeScript" /> 
+      <img src="https://img.shields.io/badge/Angular-%230F0F11?style=for-the-badge&logo=Angular" /> 
+      <img src="https://img.shields.io/badge/NestJS-%23E0234E?style=for-the-badge&logo=nestjs" />
 
 #### Docker & Nginx
 
--   Containerize applications for local development and deployment. Set up reverse proxies and load balancers using Nginx.
+- Containerize applications for local development and deployment. Set up reverse proxies and load balancers using Nginx.
 
-    <img src="https://img.shields.io/badge/Docker-%23fff?style=for-the-badge&logo=Docker" /> 
-    <img src="https://img.shields.io/badge/Nginx-%23009639?style=for-the-badge&logo=Nginx" />
+      <img src="https://img.shields.io/badge/Docker-%23fff?style=for-the-badge&logo=Docker" /> 
+      <img src="https://img.shields.io/badge/Nginx-%23009639?style=for-the-badge&logo=Nginx" />
 
 #### Git, GitHub
 
--   Use Git efficiently in teams with branching strategies, pull requests, and CI workflows.
+- Use Git efficiently in teams with branching strategies, pull requests, and CI workflows.
 
--   Efficient in team workflows with branching, pull requests, and basic CI/CD using GitHub Actions, with ability to explore more advanced use cases when needed.
+- Efficient in team workflows with branching, pull requests, and basic CI/CD using GitHub Actions, with ability to explore more advanced use cases when needed.
 
-    <img src="https://img.shields.io/badge/Git-%23Fff?style=for-the-badge&logo=Git" />
-    <img src="https://img.shields.io/badge/Github-%23181717?style=for-the-badge&logo=Github
-    " /> 
-    <img src="https://img.shields.io/badge/GitHub%20Actions-%232088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+      <img src="https://img.shields.io/badge/Git-%23Fff?style=for-the-badge&logo=Git" />
+      <img src="https://img.shields.io/badge/Github-%23181717?style=for-the-badge&logo=Github
+      " /> 
+      <img src="https://img.shields.io/badge/GitHub%20Actions-%232088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
 
 #### Tailwind CSS, HTML, CSS
 
--   Build responsive UIs with a focus on usability and performance.
+- Build responsive UIs with a focus on usability and performance.
 
-    <img src="https://img.shields.io/badge/TailwindCSS-%23fff?style=for-the-badge&logo=TailwindCSS" /> 
-    <img src="https://img.shields.io/badge/HTML5-%23fff?style=for-the-badge&logo=html5" /> 
-    <img src="https://img.shields.io/badge/CSS-%23663399?style=for-the-badge&logo=cSS3" />
+      <img src="https://img.shields.io/badge/TailwindCSS-%23fff?style=for-the-badge&logo=TailwindCSS" /> 
+      <img src="https://img.shields.io/badge/HTML5-%23fff?style=for-the-badge&logo=html5" /> 
+      <img src="https://img.shields.io/badge/CSS-%23663399?style=for-the-badge&logo=cSS3" />
 
 #### Rust, Tauri (Angular)
 
--   Basic Rust knowledge, experienced in building cross-platform desktop applications with Tauri and Angular.
+- Basic Rust knowledge, experienced in building cross-platform desktop applications with Tauri and Angular.
 
-    <img src="https://img.shields.io/badge/Rust-%23000000?style=for-the-badge&logo=rust&logoColor=white" />
-    <img src="https://img.shields.io/badge/Tauri-%2324C8DB?style=for-the-badge&logo=tauri&logoColor=white" />
-    <img src="https://img.shields.io/badge/Angular-%23DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+      <img src="https://img.shields.io/badge/Rust-%23000000?style=for-the-badge&logo=rust&logoColor=white" />
+      <img src="https://img.shields.io/badge/Tauri-%2324C8DB?style=for-the-badge&logo=tauri&logoColor=white" />
+      <img src="https://img.shields.io/badge/Angular-%23DD0031?style=for-the-badge&logo=angular&logoColor=white" />
 
 ### 🧪 Other Technologies I've Used
 
@@ -119,6 +119,30 @@
     <img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white" />
 </div>
 
+### [🚀 Tun Installer](https://github.com/VinhTin-AQUA/tun-installer)
+
+`Modern Windows EXE Installer Builder powered by HTML & CSS UI`
+
+##### 🛠️ Techs:
+
+<div>
+    <img src="https://img.shields.io/badge/Built%20with-Tauri-orange?logo=rust&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Frontend-Angular-red?logo=angular&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Style-TailwindCSS-38B2AC?logo=tailwindcss&style=for-the-badge" />
+</div>
+
+### [🚀 VSCode Terminal](https://github.com/VinhTin-AQUA/vsc-terminal)
+
+`VS Code Terminal is a lightweight desktop terminal application inspired by the integrated terminal in Visual Studio Code.`
+
+##### 🛠️ Techs:
+
+<div>
+    <img src="https://img.shields.io/badge/Built%20with-Tauri-orange?logo=rust&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Frontend-Angular-red?logo=angular&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Style-TailwindCSS-38B2AC?logo=tailwindcss&style=for-the-badge" />
+</div>
+
 ### [💻 IDS RESNET 50 System](https://github.com/VinhTin-AQUA/IDS-RESNET-50-System)
 
 `Using ResNet50 model to DDoS attack detection system`
@@ -133,12 +157,30 @@
     <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </div>
 
-
-### [💸 Bill Insight](https://github.com/VinhTin-AQUA/Bill-Insight-V2)
+### [💸 Bill Insight](https://github.com/VinhTin-AQUA/My-Tools/tree/main/Bill-Insight)
 
 `Smart Invoice Management on Google Sheets`
 
 ##### 🛠️ Techs:
+
+<div>
+    <img src="https://img.shields.io/badge/Built%20with-Tauri-orange?logo=rust&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Frontend-Angular-red?logo=angular&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Style-TailwindCSS-38B2AC?logo=tailwindcss&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/API-Google%20Sheets-blue?logo=google&style=for-the-badge" />
+</div>
+
+### [🧰 Quick Tools](https://github.com/VinhTin-AQUA/My-Tools/tree/main/quick-tools)
+
+<div>
+<img src="https://img.shields.io/badge/Built%20with-Tauri-orange?logo=rust&style=for-the-badge" />
+<img src="https://img.shields.io/badge/Frontend-Angular-red?logo=angular&style=for-the-badge" />
+<img src="https://img.shields.io/badge/Style-TailwindCSS-38B2AC?logo=tailwindcss&style=for-the-badge" />
+</div>
+
+### [🔑 Password management](https://github.com/VinhTin-AQUA/My-Tools/tree/main/Password-Management)
+
+`Password management app, stored on firebase database registered by user account`
 
 <div>
 <img src="https://img.shields.io/badge/Built%20with-Tauri-orange?logo=rust&style=for-the-badge" />
@@ -147,45 +189,10 @@
 <img src="https://img.shields.io/badge/API-Google%20Sheets-blue?logo=google&style=for-the-badge" />
 </div>
 
-
-### [🖼️ Auto Scaling Image (CMD)](https://github.com/VinhTin-AQUA/Auto-Scaling-Image)
-
-`Command line tool to scale images using iloveimg API`
-
-<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
-
-### [🖼️ Picance](https://github.com/VinhTin-AQUA/picance)
-
-`Mobile app to enhance image quality using iloveimg and imgupscaler API`
-
-<div>
-    <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-</div>
-
-### [🔑 Password management](https://github.com/VinhTin-AQUA/Password-management)
-
-`Password management app, stored on firebase database registered by user account`
-
-<div>
-    <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-</div>
-
-### [🎮 Rogue Lite](https://github.com/VinhTin-AQUA/Rogue-Lite)
-
-`The game is developed based on the game Soul Knight`
-
-<div>
-    <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2b%2b&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/SDL2-000000?style=for-the-badge&logo=SDL&logoColor=white" />
-</div>
-
 ---
 
 ## 📫 Contact Me
 
--   Email: tinhovinh@gmail.com
--   LinkedIn: [Linkedin](https://www.linkedin.com/in/tin-ho-vinh/)
--   Portfolio: [Portfolio](https://newtun-code-cheat-sheet.is-a.dev/home)
+- Email: tinhovinh@gmail.com
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/tin-ho-vinh/)
+- Portfolio: [Portfolio](https://newtun.is-a.dev/home)
