@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  Hi there! I'm <a style="font-weight:bold; color: green;" src="https://github.com/VinhTin-AQUA">NewTun (Vinhtin-Aqua)</a>, a software developer passionate about building real-world projects and continuously learning new technologies.
+  Hi there! I'm <a style="font-weight:bold; color: green; cursor: pointer;" src="https://github.com/VinhTin-AQUA">NewTun (Vinhtin-Aqua)</a>, a software developer passionate about building real-world projects and continuously learning new technologies.
 </p>
 
 ---
@@ -19,69 +19,80 @@
 
 - Build scalable RESTful APIs, real-time communication with gRPC, and web applications using MVC. Experienced in designing clean architecture and integrating with various data sources.
 
-      <img src="https://img.shields.io/badge/.NET-AspNetCore-%233b82f6?style=for-the-badge&logo=dotnet&logoColor=%23fff&labelColor=%233b82f6&color=white" />
+<p>
+  <img src="https://img.shields.io/badge/.NET-AspNetCore-%233b82f6?style=for-the-badge&logo=dotnet&logoColor=%23fff&labelColor=%233b82f6&color=white" />
+</p>
 
 #### SQL, MongoDB, Redis
 
 - Design relational (SQL) and NoSQL (MongoDB) databases. Use Redis for caching and performance improvement.
 
-      <img src="https://img.shields.io/badge/SQL-%2360a5fa?style=for-the-badge" /> 
-      <img src="https://img.shields.io/badge/MongoDB-%23fff?style=for-the-badge&logo=mongodb" /> 
-      <img src="https://img.shields.io/badge/Redis-%23fff?style=for-the-badge&logo=Redis" />
+<p>
+  <img src="https://img.shields.io/badge/SQL-%2360a5fa?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MongoDB-%23fff?style=for-the-badge&logo=mongodb" />
+  <img src="https://img.shields.io/badge/Redis-%23fff?style=for-the-badge&logo=redis" />
+</p>
 
 #### TypeScript, Angular, NestJS
 
 - Build full-featured frontend and backend applications with TypeScript. Good at structuring modular, scalable SPAs and microservices.
 
-      <img src="https://img.shields.io/badge/TypeScript-%23fff?style=for-the-badge&logo=TypeScript" /> 
-      <img src="https://img.shields.io/badge/Angular-%230F0F11?style=for-the-badge&logo=Angular" /> 
-      <img src="https://img.shields.io/badge/NestJS-%23E0234E?style=for-the-badge&logo=nestjs" />
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-%23fff?style=for-the-badge&logo=typescript" />
+  <img src="https://img.shields.io/badge/Angular-%230F0F11?style=for-the-badge&logo=angular" />
+  <img src="https://img.shields.io/badge/NestJS-%23E0234E?style=for-the-badge&logo=nestjs" />
+</p>
 
 #### Docker & Nginx
 
 - Containerize applications for local development and deployment. Set up reverse proxies and load balancers using Nginx.
 
-      <img src="https://img.shields.io/badge/Docker-%23fff?style=for-the-badge&logo=Docker" /> 
-      <img src="https://img.shields.io/badge/Nginx-%23009639?style=for-the-badge&logo=Nginx" />
+<p>
+  <img src="https://img.shields.io/badge/Docker-%23fff?style=for-the-badge&logo=docker" /> 
+  <img src="https://img.shields.io/badge/Nginx-%23009639?style=for-the-badge&logo=nginx" />
+</p>
 
 #### Git, GitHub
 
-- Use Git efficiently in teams with branching strategies, pull requests, and CI workflows.
+- Efficient in team workflows with branching, pull requests, and basic CI/CD using GitHub Actions.
 
-- Efficient in team workflows with branching, pull requests, and basic CI/CD using GitHub Actions, with ability to explore more advanced use cases when needed.
-
-      <img src="https://img.shields.io/badge/Git-%23Fff?style=for-the-badge&logo=Git" />
-      <img src="https://img.shields.io/badge/Github-%23181717?style=for-the-badge&logo=Github
-      " /> 
-      <img src="https://img.shields.io/badge/GitHub%20Actions-%232088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+<p>
+  <img src="https://img.shields.io/badge/Git-%23F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-%23181717?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-%232088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+</p>
 
 #### Tailwind CSS, HTML, CSS
 
 - Build responsive UIs with a focus on usability and performance.
 
-      <img src="https://img.shields.io/badge/TailwindCSS-%23fff?style=for-the-badge&logo=TailwindCSS" /> 
-      <img src="https://img.shields.io/badge/HTML5-%23fff?style=for-the-badge&logo=html5" /> 
-      <img src="https://img.shields.io/badge/CSS-%23663399?style=for-the-badge&logo=cSS3" />
+<p>
+  <img src="https://img.shields.io/badge/TailwindCSS-%23fff?style=for-the-badge&logo=tailwindcss" /> 
+  <img src="https://img.shields.io/badge/HTML5-%23fff?style=for-the-badge&logo=html5" /> 
+  <img src="https://img.shields.io/badge/CSS3-%23663399?style=for-the-badge&logo=css3" />
+</p>
 
 #### Rust, Tauri (Angular)
 
 - Basic Rust knowledge, experienced in building cross-platform desktop applications with Tauri and Angular.
 
-      <img src="https://img.shields.io/badge/Rust-%23000000?style=for-the-badge&logo=rust&logoColor=white" />
-      <img src="https://img.shields.io/badge/Tauri-%2324C8DB?style=for-the-badge&logo=tauri&logoColor=white" />
-      <img src="https://img.shields.io/badge/Angular-%23DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+<p>
+  <img src="https://img.shields.io/badge/Rust-%23000000?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tauri-%2324C8DB?style=for-the-badge&logo=tauri&logoColor=white" />
+  <img src="https://img.shields.io/badge/Angular-%23DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+</p>
 
 ### 🧪 Other Technologies I've Used
 
 <div>
-    <img src="https://img.shields.io/badge/Kafka-%23231F20?style=for-the-badge&logo=apachekafka"/> 
-    <img src="https://img.shields.io/badge/Graphql-%23E10098?style=for-the-badge&logo=graphql"/>
-    <img src="https://img.shields.io/badge/Python-%23fff?style=for-the-badge&logo=python"/> 
-    <img src="https://img.shields.io/badge/Flutter-%2302569B?style=for-the-badge&logo=flutter"/> 
-    <img src="https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=Dart"/> 
-    <img src="https://img.shields.io/badge/MinIO-%23C72E49?style=for-the-badge&logo=MinIO"/>
-    <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/gRPC-0D7DB5?style=for-the-badge&logo=grpc&logoColor=white" />
+<img src="https://img.shields.io/badge/Kafka-%23231F20?style=for-the-badge&logo=apachekafka"/> 
+<img src="https://img.shields.io/badge/GraphQL-%23E10098?style=for-the-badge&logo=graphql"/>
+<img src="https://img.shields.io/badge/Python-%23fff?style=for-the-badge&logo=python"/> 
+<img src="https://img.shields.io/badge/Flutter-%2302569B?style=for-the-badge&logo=flutter"/> 
+<img src="https://img.shields.io/badge/Dart-%230175C2?style=for-the-badge&logo=dart"/> 
+<img src="https://img.shields.io/badge/MinIO-%23C72E49?style=for-the-badge&logo=minio"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" /> 
+<img src="https://img.shields.io/badge/gRPC-0D7DB5?style=for-the-badge&logo=grpc&logoColor=white" />
 </div>
 
 ---
@@ -89,10 +100,8 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-
-  <img src="https://github-readme-stats.vercel.app/api?username=VinhTin-AQUA&show_icons=true&theme=radical&title_color=16a34a&custom_title=NewTun&border_radius=12" style="height: 180px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinhTin-AQUA&size_weight=0.5&count_weight=0.5&layout=compact&hide_progress=true&theme=radical&border_radius=12&title_color=16a34a" style="height: 180px" />
-
+<img src="https://github-readme-stats.vercel.app/api?username=VinhTin-AQUA&show_icons=true&theme=radical&title_color=16a34a&custom_title=NewTun&border_radius=12" style="height: 180px" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VinhTin-AQUA&size_weight=0.5&count_weight=0.5&layout=compact&hide_progress=true&theme=radical&border_radius=12&title_color=16a34a" style="height: 180px" />
 </div>
 
 ---
@@ -171,6 +180,8 @@
 </div>
 
 ### [🧰 Quick Tools](https://github.com/VinhTin-AQUA/My-Tools/tree/main/quick-tools)
+
+`Tiny Tools`
 
 <div>
 <img src="https://img.shields.io/badge/Built%20with-Tauri-orange?logo=rust&style=for-the-badge" />
