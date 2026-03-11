@@ -1,7 +1,7 @@
 <h1 align="center"> VINHTIN-AQUA </h1> <br>
 <p align="center">
   <a href="https://github.com/VinhTin-AQUA">
-    <!-- <img alt="GitPoint" title="GitPoint" style="border-radius: 1000px" src="images/logo.png" width="250"> -->
+    <img alt="GitPoint" title="GitPoint" style="border-radius: 1000px" src="./images/logo.png" width="250">
   </a>
 </p>
 
