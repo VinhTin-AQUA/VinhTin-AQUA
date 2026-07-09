@@ -1,1 +1,63 @@
 update
+
+- random color (theme)
+- About me
+    - Tên và vị trí của bạn
+    - Một câu giới thiệu ngắn
+    - Ảnh cá nhân hoặc avatar
+    - Các thong tin liên hệ
+        - Xem dự án
+        - Github
+        - Mail
+        - LinkedIn
+        - CV
+
+    - Giới thiệu bản thân
+
+        - Bạn là ai
+        - Kinh nghiệm
+        - Công nghệ chính
+        - Mục tiêu nghề nghiệp
+
+Kinh nghiệm làm việc (Experience) Career
+
+- Technical
+
+    Frontend
+        React
+        Next.js
+        TypeScript
+        Tailwind CSS
+    Backend
+        Node.js
+        Express
+        NestJS
+        Database
+        PostgreSQL
+        MongoDB
+        Redis
+    DevOps
+        Docker
+        AWS
+        CI/CD
+
+Dự án nổi bật (Projects)
+
+    Mỗi project nên có:
+
+    Ảnh demo
+    Mô tả ngắn
+    Công nghệ sử dụng
+    Link GitHub
+    Link Demo
+
+    Ví dụ:
+
+    E-commerce Platform
+    React + Node.js + PostgreSQL
+    Thanh toán Stripe
+    Dashboard quản trị
+    AI Chat Application
+    Next.js
+    OpenAI API
+    Realtime chat
