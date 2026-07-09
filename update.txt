@@ -61,3 +61,8 @@ Dự án nổi bật (Projects)
     Next.js
     OpenAI API
     Realtime chat
+
+
+## Prompt
+
+- Angular phiên bản 21 sử dụng tailwind, các control phải sử dụng ở phiên bản mới nhất như @if, @for,... các hiệu ứng animation sử dụng css thuần, không sử dụng animations của angular. với code css thuần phải code trong file style.css, còn class tailwind phải sử dụng trong các tag của html
