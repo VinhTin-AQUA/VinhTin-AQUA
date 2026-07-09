@@ -65,4 +65,4 @@ Dự án nổi bật (Projects)
 
 ## Prompt
 
-- Angular phiên bản 21 sử dụng tailwind, các control phải sử dụng ở phiên bản mới nhất như @if, @for,... các hiệu ứng animation sử dụng css thuần, không sử dụng animations của angular. với code css thuần phải code trong file style.css, còn class tailwind phải sử dụng trong các tag của html
+- Angular phiên bản 21 sử dụng tailwind, các control phải sử dụng ở phiên bản mới nhất như @if, @for,... các hiệu ứng animation sử dụng css thuần, không sử dụng animations của angular. nếu cần bổ sung css custom mà trong tailwind không có thì phải code trong file style.css, còn class tailwind phải sử dụng trong các tag của html, giao diện đơn giản, đẹp hiện đại, thiết kế cả responsive, ngôn ngữ nội dung là tiếng ANh
