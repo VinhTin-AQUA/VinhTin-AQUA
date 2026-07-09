@@ -1,0 +1,17 @@
+.timeline-item {
+    --timeline-x: 20px;
+}
+
+.timeline-dot {
+    left: var(--timeline-x);
+}
+
+.timeline-line {
+    left: var(--timeline-x);
+}
+
+@media (min-width: 640px) {
+    .timeline-item {
+        --timeline-x: 0px;
+    }
+}
