@@ -30,6 +30,8 @@ export class ThemeService {
 
     applyThemeToDOM(type: AppThemeType) {
         localStorage.setItem(this.themeKey, type);
+        this.currentTheme.set(type);
+
         const root = document.documentElement;
         const selectedTheme: AppTheme = this.appThemes()[type];
 

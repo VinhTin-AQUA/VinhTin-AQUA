@@ -29,9 +29,9 @@
 
     background-size: 48px 48px;
 
-    mask-image: radial-gradient(circle at center, black, transparent 80%);
+    /* mask-image: radial-gradient(circle at center, black, transparent 80%); */
 
-    animation: gridMove 25s linear infinite;
+    animation: gridMove 5s linear infinite;
 }
 
 /*
@@ -49,7 +49,7 @@
 
     opacity: 0.28;
 
-    animation: floating 18s infinite alternate ease-in-out;
+    animation: floating 4s infinite alternate ease-in-out;
 }
 
 /*
@@ -68,7 +68,7 @@
     top: 35%;
     right: 10%;
 
-    animation-delay: 3s;
+    /* animation-delay: 3s; */
 }
 
 .gradient-3 {

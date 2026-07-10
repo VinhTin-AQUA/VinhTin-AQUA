@@ -39,7 +39,7 @@
                         (click)="setTheme('light')"
                         class="p-1.5 rounded-full transition-all duration-200"
                         [class]="
-                            currentTheme() === 'light'
+                            themeService.currentTheme() === 'light'
                                 ? 'theme-toggle-active-custom shadow-md'
                                 : 'theme-toggle-inactive-custom'
                         "
@@ -52,7 +52,7 @@
                         (click)="setTheme('dark')"
                         class="p-1.5 rounded-full transition-all duration-200"
                         [class]="
-                            currentTheme() === 'dark'
+                            themeService.currentTheme() === 'dark'
                                 ? 'theme-toggle-active-custom shadow-md'
                                 : 'theme-toggle-inactive-custom'
                         "
@@ -161,7 +161,7 @@
                         (click)="setTheme('light')"
                         class="p-1.5 rounded-full transition-all duration-200"
                         [class]="
-                            currentTheme() === 'light'
+                            themeService.currentTheme() === 'light'
                                 ? 'theme-toggle-active-custom shadow-md'
                                 : 'theme-toggle-inactive-custom'
                         "
@@ -173,7 +173,7 @@
                         (click)="setTheme('dark')"
                         class="p-1.5 rounded-full transition-all duration-200"
                         [class]="
-                            currentTheme() === 'dark'
+                            themeService.currentTheme() === 'dark'
                                 ? 'theme-toggle-active-custom shadow-md'
                                 : 'theme-toggle-inactive-custom'
                         "

@@ -11,7 +11,6 @@ import { MeService } from '../../services/me.service';
 })
 export class Header {
     isMobileMenuOpen = signal(false);
-    currentTheme = signal('light');
 
     // Menu items data
     menuItems = signal([
@@ -39,13 +38,11 @@ export class Header {
     ]);
 
     constructor(
-        private themeService: ThemeService,
+        public themeService: ThemeService,
         public meService: MeService,
     ) {}
 
-    ngOnInit() {
-        this.currentTheme.set(this.themeService.currentTheme());
-    }
+    ngOnInit() {}
 
     toggleMobileMenu() {
         this.isMobileMenuOpen.update((value) => !value);
@@ -62,7 +59,6 @@ export class Header {
     }
 
     setTheme(theme: string) {
-        this.currentTheme.set(theme);
         if (theme === 'dark') {
             this.themeService.applyThemeToDOM('dark');
         } else {
