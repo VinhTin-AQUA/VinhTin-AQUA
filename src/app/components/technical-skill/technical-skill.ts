@@ -11,24 +11,39 @@ export class TechnicalSkill {
     // Technical data structure matching the required categories
     technicalData: TechCategory[] = [
         {
-            name: 'Frontend',
-            icon: '🖥️',
-            items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-        },
-        {
             name: 'Backend',
+            icon: '🖥️',
+            items: ['ASP.NET Core', 'RESTful API', 'Entity Framework Core', 'LINQ'],
+        },
+        {
+            name: 'Databases & Search Engines',
             icon: '⚙️',
-            items: ['Node.js', 'Express', 'NestJS'],
+            items: ['SQL Server', 'PostgreSQL', 'MongoDB', 'Elasticsearch'],
         },
         {
-            name: 'Database',
+            name: 'Messaging & Distributed Systems',
             icon: '🗄️',
-            items: ['PostgreSQL', 'MongoDB', 'Redis'],
+            items: ['RabbitMQ', 'MassTransit'],
         },
         {
-            name: 'DevOps',
+            name: 'Caching',
             icon: '🚀',
-            items: ['Docker', 'AWS', 'CI/CD'],
+            items: ['Redis'],
+        },
+        {
+            name: 'DevOps & CI/CD',
+            icon: '🔧',
+            items: ['Docker', 'Nginx', 'Git', 'Github Action'],
+        },
+        {
+            name: 'Frontend',
+            icon: '🌐',
+            items: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+        },
+        {
+            name: 'App',
+            icon: '📱',
+            items: ['Tauri', 'Tauri Mobile'],
         },
     ];
 }

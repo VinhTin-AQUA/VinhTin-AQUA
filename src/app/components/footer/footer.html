@@ -21,6 +21,7 @@
                         [href]="item.link"
                         class="theme-footer-icon-wrapper group flex items-center justify-center w-9 h-9 rounded-full transition-all duration-300"
                         [attr.aria-label]="item.name"
+                        target="_blank"
                     >
                         <app-icons
                             [iconName]="item.icon"
@@ -40,7 +41,7 @@
                 <span
                     class="theme-footer-badge inline-block px-3 py-1 rounded-full text-[10px] font-mono tracking-wider animate-pulse-slow whitespace-nowrap"
                 >
-                     {{meService.me().openToWork}}
+                    {{ meService.me().openToWork }}
                 </span>
             </div>
         </div>
