@@ -136,6 +136,27 @@
     <img height="120px" src="https://github-readme-streak-stats.herokuapp.com/?user=VinhTin-AQUA&hide_border=true&theme=dark" />
 </p>
 
+<details>
+<summary><strong>GitHub & coding signals</strong></summary>
+
+<br />
+
+<p align="center">
+  <a href="https://wakatime.com/@59b42694-26d5-4035-8d80-267d68314570"><img src="https://wakatime.com/badge/user/59b42694-26d5-4035-8d80-267d68314570.svg" alt="WakaTime hours coded" /></a>
+  <img src="https://komarev.com/ghpvc/?username=VinhTin-AQUA&style=flat-square&color=0E81F7&label=Profile+views" alt="Profile views" />
+</p>
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api?username=VinhTin-AQUA&show_icons=true&theme=algolia&include_all_commits=true&count_private=true" alt="Nguyen Le Phong GitHub stats" />
+  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=VinhTin-AQUA&layout=compact&langs_count=8&theme=algolia" alt="Nguyen Le Phong top languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=VinhTin-AQUA&theme=algolia&hide_border=true" alt="GitHub streak stats" />
+</p>
+
+</details>
+
 ---
 
 ## 🚀 Projects
