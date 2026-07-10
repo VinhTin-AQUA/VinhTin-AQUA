@@ -1,10 +1,10 @@
 <h1 align="center"> 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=24C8DB&center=true&vCenter=true&width=435&lines=VINHTIN-AQUA;SOFTWARE+DEVELOPER" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=200&color=24C8DB&center=true&vCenter=true&width=435&lines=VINHTIN-AQUA;.NET+DEVELOPER" alt="Typing SVG" />
 </h1>
 
 <p align="center">
   <a href="https://github.com/VinhTin-AQUA">
-    <img alt="GitPoint" title="GitPoint" style="border-radius: 1000px" src="images/logo.png" width="250">
+    <img alt="GitPoint" title="GitPoint" style="border-radius: 1000px" src="./public/avatar.png" width="250">
   </a>
 </p>
 
@@ -14,7 +14,8 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/tin-ho-vinh/">💼 LinkedIn</a> • 
-  <a href="mailto:tinhovinh@gmail.com">📧 Email</a>
+  <a href="mailto:tinhovinh@gmail.com">📧 Email</a> • 
+  <a href="mailto:tinhovinh@gmail.com">👁️‍🗨️ Portfolio</a>
 </p>
 
 ---
