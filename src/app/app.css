@@ -1,3 +1,124 @@
 .body {
-    background-color: var(--background);
+    background: var(--background);
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 100vh;
+}
+
+/*
+    Grid background
+*/
+.background-grid {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            color-mix(in srgb, var(--foreground) 12%, transparent) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            color-mix(in srgb, var(--foreground) 12%, transparent) 1px,
+            transparent 1px
+        );
+
+    background-size: 48px 48px;
+
+    mask-image: radial-gradient(circle at center, black, transparent 80%);
+
+    animation: gridMove 25s linear infinite;
+}
+
+/*
+    Gradient blobs
+*/
+.gradient {
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.28;
+
+    animation: floating 18s infinite alternate ease-in-out;
+}
+
+/*
+    lấy màu trực tiếp từ json
+*/
+.gradient-1 {
+    background: linear-gradient(45deg, var(--brightMagenta), var(--magenta));
+
+    top: 5%;
+    left: 10%;
+}
+
+.gradient-2 {
+    background: linear-gradient(45deg, var(--brightCyan), var(--cyan));
+
+    top: 35%;
+    right: 10%;
+
+    animation-delay: 3s;
+}
+
+.gradient-3 {
+    background: linear-gradient(45deg, var(--brightYellow), var(--yellow));
+
+    bottom: 10%;
+    left: 30%;
+
+    animation-delay: 6s;
+}
+
+.gradient-4 {
+    background: linear-gradient(45deg, var(--brightGreen), var(--green));
+
+    bottom: 25%;
+    right: 25%;
+
+    animation-delay: 9s;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0) scale(1);
+
+        filter: blur(120px) hue-rotate(0deg);
+    }
+
+    50% {
+        transform: translate(120px, -80px) scale(1.25);
+
+        filter: blur(140px) hue-rotate(90deg);
+    }
+
+    100% {
+        transform: translate(-100px, 120px) scale(0.95);
+
+        filter: blur(120px) hue-rotate(180deg);
+    }
+}
+
+@keyframes gridMove {
+    from {
+        background-position:
+            0 0,
+            0 0;
+    }
+
+    to {
+        background-position:
+            48px 48px,
+            48px 48px;
+    }
 }

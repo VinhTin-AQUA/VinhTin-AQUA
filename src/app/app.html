@@ -1,13 +1,24 @@
-<div class="body">
-    <app-header></app-header>
+<div class="body relative overflow-hidden min-h-screen">
 
-    <app-about-me></app-about-me>
+    <div class="background-grid"></div>
 
-    <app-career></app-career>
+    <div class="gradient gradient-1"></div>
+    <div class="gradient gradient-2"></div>
+    <div class="gradient gradient-3"></div>
+    <div class="gradient gradient-4"></div>
 
-    <app-technical-skill></app-technical-skill>
+    <div class="relative z-10">
+        <app-header></app-header>
 
-    <app-project></app-project>
+        <app-about-me id="about-me"></app-about-me>
 
-    <app-footer></app-footer>
+        <app-career id="career"></app-career>
+
+        <app-technical-skill id="technical-skill"></app-technical-skill>
+
+        <app-project id="project"></app-project>
+
+        <app-footer></app-footer>
+    </div>
+
 </div>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MeService } from '../../services/me.service';
-import { Icons } from "../icons/icons";
+import { Icons } from '../icons/icons';
 
 @Component({
     selector: 'app-about-me',
@@ -9,7 +9,6 @@ import { Icons } from "../icons/icons";
     styleUrl: './about-me.css',
 })
 export class AboutMe {
-   
     // About blocks data
     aboutBlocks = [
         {
@@ -17,43 +16,41 @@ export class AboutMe {
             title: 'Who I Am',
             icon: '👤',
             content:
-                "I'm a passionate Full-Stack Developer with 5+ years of experience building scalable web applications. I thrive on solving complex problems and creating intuitive user experiences.",
+                "I'm a .NET Developer with 2 years of experience building web applications and backend services using C# and ASP.NET Core. I enjoy learning new technologies, solving problems, and writing clean, maintainable code.",
         },
         {
             id: 'exp',
             title: 'Experience',
             icon: '💼',
             content:
-                'Currently leading frontend development at TechCorp. Previously worked at StartupHub and Freelance projects. Built applications serving 1M+ users across finance, healthcare, and e-commerce sectors.',
+                'Over the past 2 years, I have worked on developing and maintaining web applications, RESTful APIs, and database-driven systems. I have collaborated with cross-functional teams to deliver reliable and user-focused solutions.',
         },
         {
             id: 'tech',
             title: 'Core Technologies',
             icon: '⚡',
             content:
-                'My primary tech stack focuses on modern JavaScript ecosystem and cloud platforms:',
+                'My primary technologies include C#, ASP.NET Core, Entity Framework Core, SQL Server, REST APIs, Git, and modern frontend frameworks when needed.',
         },
         {
             id: 'goal',
             title: 'Career Goal',
             icon: '🎯',
             content:
-                'To become a Tech Lead Architect, bridging the gap between business requirements and technical excellence. I aim to build products that make a positive impact while mentoring the next generation of developers.',
+                'My goal is to continuously improve my technical skills, gain deeper expertise in .NET development, and contribute to building high-quality software that delivers real business value.',
         },
     ];
 
     // Tech stack for the 'tech' block
     techStack = [
+        '.NET',
         'Angular',
-        'React',
-        'NestJS',
-        'Node.js',
         'TypeScript',
         'Tailwind CSS',
         'MongoDB',
         'PostgreSQL',
         'Docker',
-        'AWS',
+        'Tauri',
     ];
 
     constructor(public meService: MeService) {}

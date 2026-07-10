@@ -17,12 +17,23 @@ export class Header {
     menuItems = signal([
         {
             label: 'About Me',
-            href: '#',
+            href: '#about-me',
             icon: '',
         },
         {
+            label: 'Career',
+            href: '#career',
+            icon: '',
+        },
+        {
+            label: 'Technical',
+            href: '#technical-skill',
+            icon: '',
+        },
+
+        {
             label: 'Projects',
-            href: '#',
+            href: '#project',
             icon: '',
         },
     ]);

@@ -140,9 +140,9 @@
     transition: all 0.2s ease;
 }
 
-.theme-card-hover:hover {
+/* .theme-card-hover:hover {
     background-color: var(--selectionBackground);
-}
+} */
 
 /* Company & location text */
 .theme-company-text {
