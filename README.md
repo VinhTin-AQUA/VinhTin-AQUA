@@ -132,11 +132,7 @@
 
 ## ⚡ GitHub Stats
 
-<p align="center">
-    <img height="120px" src="https://github-readme-streak-stats.herokuapp.com/?user=VinhTin-AQUA&hide_border=true&theme=dark" />
-</p>
-
-<details>
+<details open>
 <summary><strong>GitHub & coding signals</strong></summary>
 
 <br />
