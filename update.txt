@@ -137,122 +137,147 @@ còn đây là trang angular sử dụng tailwind với các màu cũ. Giơ hãy
 lưu ý, các class tailwind còn lại giữ nguyên không sửa gì thêm, chỉ được cập nhật màu thôi. và màu cũng phải dặt tên khác, không được đè lên clas tailwind cũ
 
 <!-- src/app/app.component.html -->
-<div
-    class="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 p-6 transition-colors duration-300"
->
-    <div class="max-w-7xl mx-auto">
-        <!-- Header -->
-        <header class="mb-12 text-center">
-            <h1
-                class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-800 dark:text-white"
-            >
-                Technical Skills
-            </h1>
-            <p class="mt-2 text-lg text-slate-500 dark:text-slate-300">
-                Modern tools & technologies I use
-            </p>
-            <div
-                class="mt-4 h-1 w-24 mx-auto rounded-full bg-linear-to-r from-blue-500 to-purple-500"
-            ></div>
-        </header>
-
-        <!-- Technical Cards Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
-            @for (category of technicalData; track category.name) {
-                <div
-                    class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-slate-200/50 dark:border-slate-700/50 flex flex-col"
+<div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Main -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <section>
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">
+                    Projects
+                </h2>
+                <span
+                    class="text-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+                    >{{ projects.length }} projects</span
                 >
-                    <!-- Category Header -->
-                    <div class="flex items-center gap-3 mb-4">
-                        <div
-                            class="p-2 rounded-lg bg-linear-to-br from-blue-500/10 to-purple-500/10 dark:from-blue-400/20 dark:to-purple-400/20"
-                        >
-                            <span class="text-2xl">{{ category.icon }}</span>
-                        </div>
-                        <h2 class="text-xl font-bold text-slate-700 dark:text-slate-200">
-                            {{ category.name }}
-                        </h2>
-                    </div>
+            </div>
 
-                    <!-- Tech items -->
-                    <ul class="space-y-2.5 flex-1">
-                        @for (tech of category.items; track tech) {
-                            <li
-                                class="flex items-center gap-2.5 text-slate-600 dark:text-slate-300"
-                            >
-                                <span
-                                    class="w-1.5 h-1.5 rounded-full bg-blue-500 dark:bg-blue-400 shrink-0"
-                                ></span>
-                                <span class="font-medium">{{ tech }}</span>
-                            </li>
-                        }
-                    </ul>
-
-                    <!-- Decorative footer -->
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                @for (project of projects; track project.id) {
                     <div
-                        class="mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex justify-between text-xs text-slate-400 dark:text-slate-500"
+                        class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
                     >
-                        <span>{{ category.items.length }} technologies</span>
-                        <span>✦</span>
+                        <!-- Image -->
+                        <div class="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700">
+                            <img
+                                [src]="project.image"
+                                [alt]="project.title"
+                                class="w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                            <div
+                                class="absolute top-2 right-2 bg-black/60 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm"
+                            >
+                                {{ project.techStack[0] }}
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">
+                                {{ project.title }}
+                            </h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 line-clamp-2">
+                                {{ project.description }}
+                            </p>
+
+                            <!-- Tech tags -->
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                @for (tech of project.techStack; track tech) {
+                                    <span
+                                        class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-3 py-1 rounded-full"
+                                        >{{ tech }}</span
+                                    >
+                                }
+                            </div>
+
+                            <!-- Actions -->
+                            <div
+                                class="mt-auto flex items-center justify-between pt-2 border-t border-gray-100 dark:border-gray-700"
+                            >
+                                <a
+                                    [href]="project.github"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                                >
+                                    <span>GitHub</span>
+                                    <span class="text-lg">↗</span>
+                                </a>
+                                <!-- <a
+                                    [href]="project.demo"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-1.5 rounded-full transition-colors duration-200 shadow-sm"
+                                >
+                                    <span>Live Demo</span>
+                                    <span class="text-lg">→</span>
+                                </a> -->
+                            </div>
+                        </div>
                     </div>
-                </div>
-            }
-        </div>
-    </div>
+                } @empty {
+                    <div class="col-span-full text-center py-12 text-gray-500 dark:text-gray-400">
+                        No projects available.
+                    </div>
+                }
+            </div>
+        </section>
+    </main>
 </div>
 
-/* ----- custom CSS animations (pure) ----- */
-@keyframes fadeSlideUp {
-    0% {
+
+/* src/app/app.component.css */
+/* Custom CSS for animations and additional styles that Tailwind cannot handle alone */
+
+/* Fade-in animation for project cards */
+@keyframes fadeInUp {
+    from {
         opacity: 0;
-        transform: translateY(18px);
+        transform: translateY(1.5rem);
     }
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@keyframes pulseGlow {
-    0%,
-    100% {
-        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.25);
-    }
-    50% {
-        box-shadow: 0 0 0 8px rgba(99, 102, 241, 0.05);
-    }
+
+/* Apply animation to each project card with a subtle delay */
+.project-card {
+    animation: fadeInUp 0.6s ease forwards;
 }
-.card-animate {
-    animation: fadeSlideUp 0.5s ease forwards;
+
+/* Responsive line clamping with custom fallback */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
-.badge-pulse {
-    animation: pulseGlow 2.5s infinite;
-}
-/* custom hover lift (not in tailwind) */
-.hover-lift {
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-.hover-lift:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
-}
-/* gradient text – pure CSS */
-.gradient-text {
-    background: linear-gradient(135deg, #4f46e5, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-/* custom scrollbar (optional) */
+
+/* Custom scrollbar for modern look */
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f5f9;
-    border-radius: 12px;
+    background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #a5b4fc;
-    border-radius: 12px;
+    background: #888;
+    border-radius: 10px;
 }
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+    background: #2d3748;
+}
+.dark ::-webkit-scrollbar-thumb {
+    background: #4a5568;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #718096;
+}
+

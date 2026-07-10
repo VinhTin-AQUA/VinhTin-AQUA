@@ -1,5 +1,4 @@
 /* src/app/app.component.css */
-/* Custom CSS for animations and additional styles that Tailwind cannot handle alone */
 
 /* Fade-in animation for project cards */
 @keyframes fadeInUp {
@@ -26,28 +25,96 @@
     overflow: hidden;
 }
 
-/* Custom scrollbar for modern look */
+/* ==========================================================
+   Theme classes
+   ========================================================== */
+
+/* Page */
+.theme-page {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Section title */
+.theme-title {
+    color: var(--foreground);
+}
+
+/* Badge counter */
+.theme-badge {
+    background-color: var(--brightWhite);
+    color: var(--foreground);
+}
+
+/* Project card */
+.theme-card {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Image placeholder */
+.theme-image-placeholder {
+    background-color: var(--brightWhite);
+}
+
+/* Floating tech badge */
+.theme-tech-badge {
+    background-color: color-mix(in srgb, var(--black) 70%, transparent);
+    color: var(--brightWhite);
+}
+
+/* Project title */
+.theme-project-title {
+    color: var(--foreground);
+}
+
+/* Project description */
+.theme-project-description {
+    color: var(--white);
+}
+
+/* Tech tag */
+.theme-tag {
+    background-color: var(--brightWhite);
+    color: var(--black);
+}
+
+/* Divider */
+.theme-divider {
+    border-color: var(--brightWhite);
+}
+
+/* Links */
+.theme-link {
+    color: var(--brightBlack);
+}
+
+.theme-link:hover {
+    color: var(--blue);
+}
+
+/* Empty state */
+.theme-empty {
+    color: var(--white);
+}
+
+/* ==========================================================
+   Scrollbar
+   ========================================================== */
+
 ::-webkit-scrollbar {
     width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--brightWhite);
 }
 
-/* Dark mode scrollbar */
-.dark ::-webkit-scrollbar-track {
-    background: #2d3748;
+::-webkit-scrollbar-thumb {
+    background: var(--brightBlack);
+    border-radius: 10px;
 }
-.dark ::-webkit-scrollbar-thumb {
-    background: #4a5568;
-}
-.dark ::-webkit-scrollbar-thumb:hover {
-    background: #718096;
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--black);
 }
