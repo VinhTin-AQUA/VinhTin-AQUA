@@ -1,4 +1,56 @@
-/* style.css — custom styles không có trong Tailwind */
+/* component.css — custom styles sử dụng theme variables */
+/* Tất cả các class mới sẽ có prefix 'theme-' để tránh xung đột với Tailwind */
+
+.theme-footer {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.theme-footer-title {
+    color: var(--foreground);
+}
+
+.theme-footer-divider {
+    color: var(--brightBlack);
+}
+
+.theme-footer-subtitle {
+    color: var(--brightBlack);
+}
+
+.theme-footer-icon-wrapper {
+    background-color: var(--black);
+    border-color: var(--brightBlack);
+}
+
+.theme-footer-icon-wrapper:hover {
+    background-color: var(--selectionBackground);
+    border-color: var(--blue);
+}
+
+.theme-footer-icon {
+    color: var(--white);
+}
+
+.theme-footer-icon:hover {
+    color: var(--blue);
+}
+
+.theme-footer-year {
+    color: var(--foreground);
+}
+
+.theme-footer-year-icon {
+    color: var(--blue);
+}
+
+.theme-footer-badge {
+    background-color: var(--selectionBackground);
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+/* Animation giữ nguyên nhưng có thể tùy chỉnh nếu cần */
 .animate-pulse-slow {
     animation: pulseSoft 2.8s ease-in-out infinite;
 }
@@ -15,9 +67,9 @@
     }
 }
 
-/* responsive fine-tune */
+/* responsive fine-tune với theme variables */
 @media (max-width: 640px) {
-    .border-t {
-        border-color: rgba(55, 65, 81, 0.4);
+    .theme-border-top {
+        border-top-color: var(--selectionInactiveBackground);
     }
 }

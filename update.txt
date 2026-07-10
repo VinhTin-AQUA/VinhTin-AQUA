@@ -136,148 +136,72 @@ Dự án nổi bật (Projects)
 còn đây là trang angular sử dụng tailwind với các màu cũ. Giơ hãy bỏ các màu cũ của class tailwind đi, gán cho nó màu mới, còn màu nào phù hợp với biến css nào thì bạn tự chọn cho phù hợ với theme. Phải code màu mới vào file component.css
 lưu ý, các class tailwind còn lại giữ nguyên không sửa gì thêm, chỉ được cập nhật màu thôi. và màu cũng phải dặt tên khác, không được đè lên clas tailwind cũ
 
-<!-- src/app/app.component.html -->
-<div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
-    <!-- Main -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <section>
-            <div class="flex items-center justify-between mb-6">
-                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">
-                    Projects
-                </h2>
-                <span
-                    class="text-sm text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-                    >{{ projects.length }} projects</span
-                >
+
+<!-- app.component.html -->
+<footer class="bg-gray-900 text-gray-300 py-6 px-6 mt-auto">
+    <div class="max-w-7xl mx-auto">
+        <!-- All items in one row: name, contacts, year -->
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <!-- Left: Name & Position -->
+            <div class="flex items-center gap-3">
+                <h3 class="text-white text-lg font-semibold tracking-wide">John Carter</h3>
+                <span class="hidden sm:inline text-gray-500">|</span>
+                <p class="text-sm text-gray-400 hidden sm:block">Senior Full‑Stack Developer</p>
             </div>
 
-            <!-- Projects Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                @for (project of projects; track project.id) {
-                    <div
-                        class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
+            <!-- Center: Contact icons in horizontal layout -->
+            <div class="flex flex-wrap items-center gap-2">
+                @for (item of contactItems; track item.label) {
+                    <a
+                        [href]="item.href"
+                        class="group flex items-center justify-center w-9 h-9 rounded-full bg-gray-800/50 hover:bg-blue-500/20 border border-gray-700 hover:border-blue-400/50 transition-all duration-300"
+                        [attr.aria-label]="item.label"
                     >
-                        <!-- Image -->
-                        <div class="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700">
-                            <img
-                                [src]="project.image"
-                                [alt]="project.title"
-                                class="w-full h-full object-cover"
-                                loading="lazy"
-                            />
-                            <div
-                                class="absolute top-2 right-2 bg-black/60 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm"
-                            >
-                                {{ project.techStack[0] }}
-                            </div>
-                        </div>
-
-                        <!-- Content -->
-                        <div class="p-5 flex flex-col flex-1">
-                            <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-1">
-                                {{ project.title }}
-                            </h3>
-                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 line-clamp-2">
-                                {{ project.description }}
-                            </p>
-
-                            <!-- Tech tags -->
-                            <div class="flex flex-wrap gap-1.5 mb-4">
-                                @for (tech of project.techStack; track tech) {
-                                    <span
-                                        class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-3 py-1 rounded-full"
-                                        >{{ tech }}</span
-                                    >
-                                }
-                            </div>
-
-                            <!-- Actions -->
-                            <div
-                                class="mt-auto flex items-center justify-between pt-2 border-t border-gray-100 dark:border-gray-700"
-                            >
-                                <a
-                                    [href]="project.github"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                                >
-                                    <span>GitHub</span>
-                                    <span class="text-lg">↗</span>
-                                </a>
-                                <!-- <a
-                                    [href]="project.demo"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-1.5 rounded-full transition-colors duration-200 shadow-sm"
-                                >
-                                    <span>Live Demo</span>
-                                    <span class="text-lg">→</span>
-                                </a> -->
-                            </div>
-                        </div>
-                    </div>
-                } @empty {
-                    <div class="col-span-full text-center py-12 text-gray-500 dark:text-gray-400">
-                        No projects available.
-                    </div>
+                        <span
+                            class="text-gray-400 group-hover:text-blue-400 text-base transition-colors"
+                        >
+                            {{ item.icon }}
+                        </span>
+                    </a>
                 }
             </div>
-        </section>
-    </main>
-</div>
 
+            <!-- Right: Current year & available for hire -->
+            <div class="flex items-center gap-3">
+                <span class="text-sm text-gray-300 flex items-center gap-1">
+                    <span class="text-blue-400">©</span>
+                    {{ currentYear }}
+                </span>
+                <span class="text-gray-500 hidden sm:inline">|</span>
+                <span
+                    class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-[10px] font-mono tracking-wider animate-pulse-slow whitespace-nowrap"
+                >
+                    ✦ available
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+/* style.css — custom styles không có trong Tailwind */
+.animate-pulse-slow {
+    animation: pulseSoft 2.8s ease-in-out infinite;
+}
 
-/* src/app/app.component.css */
-/* Custom CSS for animations and additional styles that Tailwind cannot handle alone */
-
-/* Fade-in animation for project cards */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(1.5rem);
+@keyframes pulseSoft {
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(1);
     }
-    to {
+    50% {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1.03);
     }
 }
 
-/* Apply animation to each project card with a subtle delay */
-.project-card {
-    animation: fadeInUp 0.6s ease forwards;
+/* responsive fine-tune */
+@media (max-width: 640px) {
+    .border-t {
+        border-color: rgba(55, 65, 81, 0.4);
+    }
 }
-
-/* Responsive line clamping with custom fallback */
-.line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* Custom scrollbar for modern look */
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* Dark mode scrollbar */
-.dark ::-webkit-scrollbar-track {
-    background: #2d3748;
-}
-.dark ::-webkit-scrollbar-thumb {
-    background: #4a5568;
-}
-.dark ::-webkit-scrollbar-thumb:hover {
-    background: #718096;
-}
-
