@@ -1,17 +1,248 @@
+/* ===== THEME-BASED COLORS ===== */
+/* Background & Text */
+.theme-bg-primary {
+  background-color: var(--background);
+}
+
+.theme-text-primary {
+  color: var(--foreground);
+}
+
+.theme-text-secondary {
+  color: var(--white);
+}
+
+/* Badge colors */
+.theme-badge-blue {
+  background-color: var(--selectionBackground);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.theme-badge-green {
+  background-color: var(--selectionBackground);
+  color: var(--green);
+}
+
+.theme-badge-purple {
+  background-color: var(--selectionBackground);
+  color: var(--magenta);
+}
+
+.theme-badge-orange {
+  background-color: var(--selectionBackground);
+  color: var(--yellow);
+}
+
+/* Card border colors */
+.theme-border-blue {
+  border-left: 4px solid var(--blue);
+}
+
+.theme-border-green {
+  border-left: 4px solid var(--green);
+}
+
+.theme-border-purple {
+  border-left: 4px solid var(--magenta);
+}
+
+.theme-border-orange {
+  border-left: 4px solid var(--yellow);
+}
+
+/* Dot colors */
+.theme-dot-blue {
+  background-color: var(--blue);
+  border-color: var(--background);
+}
+
+.theme-dot-green {
+  background-color: var(--green);
+  border-color: var(--background);
+}
+
+.theme-dot-purple {
+  background-color: var(--magenta);
+  border-color: var(--background);
+}
+
+.theme-dot-orange {
+  background-color: var(--yellow);
+  border-color: var(--background);
+}
+
+/* Header colors */
+.theme-header-badge {
+  background-color: var(--selectionBackground);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.theme-header-title {
+  color: var(--foreground);
+}
+
+.theme-header-subtitle {
+  color: var(--white);
+}
+
+/* Current badge */
+.theme-current-badge {
+  color: var(--green);
+  background-color: var(--selectionBackground);
+}
+
+/* Tech tags */
+.theme-tech-tag {
+  background-color: var(--selectionInactiveBackground);
+  color: var(--white);
+}
+
+/* Description text */
+.theme-desc-text {
+  color: var(--white);
+}
+
+/* Card hover effect */
+.theme-card-hover {
+  background-color: var(--background);
+  transition: all 0.2s ease;
+}
+
+.theme-card-hover:hover {
+  background-color: var(--selectionBackground);
+}
+
+/* Company & location text */
+.theme-company-text {
+  color: var(--white);
+}
+
+/* Period badge */
+.theme-period-badge {
+  background-color: var(--selectionBackground);
+  color: var(--foreground);
+}
+
+/* ===== TIMELINE CUSTOM STYLES ===== */
 .timeline-item {
-    --timeline-x: 20px;
+  --timeline-x: 20px;
+  position: relative;
 }
 
+/* Dot positioning */
 .timeline-dot {
-    left: var(--timeline-x);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--timeline-x);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  border-width: 3px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 20;
 }
 
+/* Line - chỉ nối giữa 2 dot */
 .timeline-line {
-    left: var(--timeline-x);
+  position: absolute;
+  top: 50%;
+  left: var(--timeline-x);
+  width: 2px;
+  height: calc(100% + 2rem); /* Nối từ dot hiện tại đến dot tiếp theo */
+  transform: translate(-50%, 0);
+  z-index: 10;
+  transform-origin: top center;
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+  .timeline-line {
+    left: 20px;
+    height: calc(100% + 2rem);
+  }
+}
+
+/* Desktop */
+@media (min-width: 640px) {
+  .timeline-item {
+    --timeline-x: 0px;
+  }
+  
+  .timeline-dot {
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .timeline-line {
+    left: 0;
+    height: calc(100% + 2rem);
+    transform: translateX(-50%);
+  }
+}
+
+/* Animation classes */
+.dot-animation {
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.1);
+  }
 }
 
 @media (min-width: 640px) {
-    .timeline-item {
-        --timeline-x: 0px;
+  @keyframes dotPulse {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
     }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+}
+
+.connecting-line {
+  animation: lineGrow 0.6s ease-out forwards;
+}
+
+@keyframes lineGrow {
+  from {
+    transform: translateX(-50%) scaleY(0);
+    transform-origin: top center;
+  }
+  to {
+    transform: translateX(-50%) scaleY(1);
+    transform-origin: top center;
+  }
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--selectionBackground);
+}
+
+/* Ping animation for dot */
+.timeline-dot .animate-ping {
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
