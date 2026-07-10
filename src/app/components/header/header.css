@@ -1,0 +1,208 @@
+/* component.css - Custom color classes using CSS variables */
+
+/* Header background colors */
+.header-custom {
+    background-color: var(--selectionBackground);
+    border-bottom-color: var(--selectionBorder);
+}
+
+/* Text colors */
+.text-primary-custom {
+    color: var(--selectionForeground);
+}
+
+.text-secondary-custom {
+    color: var(--selectionForeground);
+}
+
+.text-muted-custom {
+    color: var(--selectionForeground);
+}
+
+.text-highlight-custom {
+    color: var(--selectionHighlight);
+}
+
+/* Background colors */
+.bg-primary-custom {
+    background-color: var(--selectionBackground);
+}
+
+.bg-secondary-custom {
+    background-color: var(--selectionBackground);
+}
+
+.bg-hover-custom {
+    background-color: var(--selectionBackground);
+}
+
+.bg-active-custom {
+    background-color: var(--selectionBackground);
+}
+
+/* Border colors */
+.border-primary-custom {
+    border-color: var(--selectionBorder);
+}
+
+.border-highlight-custom {
+    border-color: var(--selectionHighlight);
+}
+
+/* Ring colors */
+.ring-primary-custom {
+    --tw-ring-color: var(--selectionHighlight);
+}
+
+.ring-secondary-custom {
+    --tw-ring-color: var(--selectionBackground);
+}
+
+/* Button and interactive colors */
+.btn-primary-custom {
+    background-color: var(--selectionHighlight);
+    color: var(--selectionForeground);
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--selectionBackground);
+}
+
+.btn-secondary-custom {
+    background-color: var(--selectionBackground);
+    color: var(--selectionForeground);
+}
+
+.btn-secondary-custom:hover {
+    background-color: var(--selectionHighlight);
+    color: var(--selectionForeground);
+}
+
+/* Status indicators */
+.status-online-custom {
+    background-color: var(--selectionHighlight);
+}
+
+.status-offline-custom {
+    background-color: var(--selectionBorder);
+}
+
+/* Shadow and overlay */
+.shadow-custom {
+    --tw-shadow-color: var(--selectionBackground);
+}
+
+.overlay-custom {
+    background-color: var(--selectionBackground);
+}
+
+/* Mobile menu specific */
+.mobile-menu-custom {
+    background-color: var(--selectionBackground);
+    border-color: var(--selectionBorder);
+}
+
+.mobile-menu-item-custom {
+    color: var(--selectionForeground);
+}
+
+.mobile-menu-item-custom:hover {
+    background-color: var(--selectionBackground);
+    color: var(--selectionHighlight);
+}
+
+/* Theme toggle */
+.theme-toggle-active-custom {
+    background-color: var(--selectionBackground);
+    color: var(--selectionHighlight);
+}
+
+.theme-toggle-inactive-custom {
+    color: var(--selectionForeground);
+}
+
+.theme-toggle-inactive-custom:hover {
+    color: var(--selectionHighlight);
+}
+
+/* Avatar ring */
+.avatar-ring-custom {
+    --tw-ring-color: var(--selectionHighlight);
+}
+
+/* Navigation items */
+.nav-item-custom {
+    color: var(--selectionForeground);
+}
+
+.nav-item-custom:hover {
+    background-color: var(--selectionBackground);
+    color: var(--selectionHighlight);
+}
+
+/* Badge/notification dot */
+.badge-custom {
+    background-color: var(--selectionHighlight);
+}
+
+/* Input and form elements */
+.input-custom {
+    background-color: var(--selectionBackground);
+    border-color: var(--selectionBorder);
+    color: var(--selectionForeground);
+}
+
+.input-custom:focus {
+    border-color: var(--selectionHighlight);
+    --tw-ring-color: var(--selectionHighlight);
+}
+
+/* Card and container */
+.card-custom {
+    background-color: var(--selectionBackground);
+    border-color: var(--selectionBorder);
+}
+
+/* Divider */
+.divider-custom {
+    border-color: var(--selectionBorder);
+}
+
+/* Hover states */
+.hover-bg-custom:hover {
+    background-color: var(--selectionBackground);
+}
+
+.hover-text-custom:hover {
+    color: var(--selectionHighlight);
+}
+
+/* Focus states */
+.focus-ring-custom:focus {
+    --tw-ring-color: var(--selectionHighlight);
+}
+
+/* Selection color */
+::selection {
+    background-color: var(--selectionHighlight);
+    color: var(--selectionForeground);
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--selectionBackground);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--selectionHighlight);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--selectionBorder);
+}

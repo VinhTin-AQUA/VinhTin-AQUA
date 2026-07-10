@@ -1,1 +1,45 @@
-<p>footer works!</p>
+<!-- app.component.html -->
+<footer class="bg-gray-900 text-gray-300 py-6 px-6 mt-auto">
+    <div class="max-w-7xl mx-auto">
+        <!-- All items in one row: name, contacts, year -->
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <!-- Left: Name & Position -->
+            <div class="flex items-center gap-3">
+                <h3 class="text-white text-lg font-semibold tracking-wide">John Carter</h3>
+                <span class="hidden sm:inline text-gray-500">|</span>
+                <p class="text-sm text-gray-400 hidden sm:block">Senior Full‑Stack Developer</p>
+            </div>
+
+            <!-- Center: Contact icons in horizontal layout -->
+            <div class="flex flex-wrap items-center gap-2">
+                @for (item of contactItems; track item.label) {
+                    <a
+                        [href]="item.href"
+                        class="group flex items-center justify-center w-9 h-9 rounded-full bg-gray-800/50 hover:bg-blue-500/20 border border-gray-700 hover:border-blue-400/50 transition-all duration-300"
+                        [attr.aria-label]="item.label"
+                    >
+                        <span
+                            class="text-gray-400 group-hover:text-blue-400 text-base transition-colors"
+                        >
+                            {{ item.icon }}
+                        </span>
+                    </a>
+                }
+            </div>
+
+            <!-- Right: Current year & available for hire -->
+            <div class="flex items-center gap-3">
+                <span class="text-sm text-gray-300 flex items-center gap-1">
+                    <span class="text-blue-400">©</span>
+                    {{ currentYear }}
+                </span>
+                <span class="text-gray-500 hidden sm:inline">|</span>
+                <span
+                    class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-[10px] font-mono tracking-wider animate-pulse-slow whitespace-nowrap"
+                >
+                    ✦ available
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>

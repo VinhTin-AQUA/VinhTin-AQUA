@@ -66,3 +66,176 @@ Dự án nổi bật (Projects)
 ## Prompt
 
 - Angular phiên bản 21 sử dụng tailwind, các control phải sử dụng ở phiên bản mới nhất như @if, @for,... các hiệu ứng animation sử dụng css thuần, không sử dụng animations của angular. nếu cần bổ sung css custom mà trong tailwind không có thì phải code trong file style.css, còn class tailwind phải sử dụng trong các tag của html, giao diện đơn giản, đẹp hiện đại, thiết kế cả responsive, ngôn ngữ nội dung là tiếng ANh
+
+
+
+- Đây là file json chứa các màu của theme
+
+{
+    "light": {
+        "background": "#FFFFFF",
+        "foreground": "#1A1A1A",
+
+        "black": "#2C2C2C",
+        "red": "#D9383A",
+        "green": "#2E8B57",
+        "yellow": "#D4A02B",
+        "blue": "#2563EB",
+        "magenta": "#7C3AED",
+        "cyan": "#0891B2",
+        "white": "#8B8B8B",
+
+        "brightBlack": "#6B7280",
+        "brightRed": "#EF4444",
+        "brightGreen": "#34D399",
+        "brightYellow": "#FBBF24",
+        "brightBlue": "#3B82F6",
+        "brightMagenta": "#A78BFA",
+        "brightCyan": "#22D3EE",
+        "brightWhite": "#E5E7EB",
+
+        "cursor": "#2563EB",
+        "cursorAccent": "#FFFFFF",
+
+        "selectionBackground": "#2563EB20",
+        "selectionForeground": "#1A1A1A",
+        "selectionInactiveBackground": "#D1D5DB40"
+    },
+    "dark": {
+        "background": "#0A0A0A",
+        "foreground": "#E8E8E8",
+
+        "black": "#2D2D2D",
+        "red": "#F87171",
+        "green": "#6EE7B7",
+        "yellow": "#FCD34D",
+        "blue": "#60A5FA",
+        "magenta": "#C084FC",
+        "cyan": "#67E8F9",
+        "white": "#A3A3A3",
+
+        "brightBlack": "#6B7280",
+        "brightRed": "#FCA5A5",
+        "brightGreen": "#A7F3D0",
+        "brightYellow": "#FDE68A",
+        "brightBlue": "#93C5FD",
+        "brightMagenta": "#D8B4FE",
+        "brightCyan": "#A5F3FC",
+        "brightWhite": "#F3F4F6",
+
+        "cursor": "#60A5FA",
+        "cursorAccent": "#0A0A0A",
+
+        "selectionBackground": "#60A5FA25",
+        "selectionForeground": "#FFFFFF",
+        "selectionInactiveBackground": "#37415160"
+    }
+}
+
+đã được load vào thành biến css và sử dụng ví dụ như sau: color: var(--selectionForeground)
+còn đây là trang angular sử dụng tailwind với các màu cũ. Giơ hãy bỏ các màu cũ của class tailwind đi, gán cho nó màu mới, còn màu nào phù hợp với biến css nào thì bạn tự chọn cho phù hợ với theme. Phải code màu mới vào file component.css
+lưu ý, các class tailwind còn lại giữ nguyên không sửa gì thêm, chỉ được cập nhật màu thôi. và màu cũng phải dặt tên khác, không được đè lên clas tailwind cũ
+
+<main
+    class="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-8 px-4 sm:px-6 lg:px-8 flex items-center justify-center pt-24"
+>
+    <div
+        class="max-w-5xl w-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-3xl shadow-xl p-6 sm:p-8 md:p-10 border border-white/20 dark:border-slate-700/50 transition-all duration-300 hover:shadow-2xl"
+    >
+        <!-- header: name + role -->
+        <div
+            class="text-center md:text-left flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10"
+        >
+            <!-- avatar -->
+            <div class="shrink-0">
+                <div
+                    class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-indigo-500/30 shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+                >
+                    <img
+                        src="https://ui-avatars.com/api/?name=Alex+River&size=160&background=4F46E5&color=fff&bold=true"
+                        alt="Avatar of Alex River"
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+            </div>
+
+            <!-- intro block -->
+            <div class="flex-1 space-y-3">
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-800 dark:text-white"
+                >
+                    Alex River
+                </h1>
+                <p class="text-xl sm:text-2xl font-medium text-indigo-600 dark:text-indigo-400">
+                    Senior Full-Stack Developer
+                </p>
+                <p
+                    class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed"
+                >
+                    Crafting digital experiences with Angular, NestJS, and cloud-native tools.
+                    Passionate about clean code and elegant design.
+                </p>
+
+                <!-- contact row (links) -->
+                <div class="flex flex-wrap items-center gap-2 pt-2">
+                    @for (item of contactLinks; track item.label) {
+                        <a
+                            [href]="item.url"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm font-medium border border-indigo-200 dark:border-indigo-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-800/40 transition duration-200 shadow-sm hover:shadow"
+                        >
+                            <!-- dynamic icon (simple emoji as placeholder) -->
+                            <span class="text-base">{{ item.icon }}</span>
+                            {{ item.label }}
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- divider -->
+        <hr class="my-8 border-slate-200 dark:border-slate-700" />
+
+        <!-- about details: who, exp, tech, goal -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            @for (block of aboutBlocks; track block.id) {
+                <div
+                    class="bg-slate-50 dark:bg-slate-700/30 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition duration-300"
+                >
+                    <h3
+                        class="text-lg font-semibold text-indigo-600 dark:text-indigo-400 flex items-center gap-2"
+                    >
+                        <span>{{ block.icon }}</span> {{ block.title }}
+                    </h3>
+                    <p
+                        class="text-slate-700 dark:text-slate-200 mt-2 leading-relaxed text-sm sm:text-base"
+                    >
+                        {{ block.content }}
+                    </p>
+                    @if (block.id === 'tech') {
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            @for (tech of techStack; track tech) {
+                                <span
+                                    class="px-3 py-1 text-xs font-mono bg-indigo-100 dark:bg-indigo-800/60 text-indigo-800 dark:text-indigo-200 rounded-full border border-indigo-200 dark:border-indigo-600/40"
+                                >
+                                    {{ tech }}
+                                </span>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+
+        <!-- extra: CTA / view projects (standalone) -->
+        <div class="mt-8 text-center md:text-right">
+            <a
+                href="#"
+                class="inline-block px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5"
+            >
+                View my projects →
+            </a>
+        </div>
+    </div>
+</main>

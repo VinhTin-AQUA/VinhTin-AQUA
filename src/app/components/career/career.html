@@ -1,5 +1,5 @@
 <!-- main app container -->
-<main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+<main class="px-4 sm:px-6 py-10 sm:py-16">
     <!-- header -->
     <div class="text-center mb-12">
         <span
@@ -16,7 +16,7 @@
     </div>
 
     <!-- ====== TIMELINE ====== -->
-    <div class="relative">
+    <div class="relative max-w-5xl mx-auto ">
         <!-- vertical line (CSS) -->
         <div class="timeline-line hidden sm:block"></div>
         <!-- mobile line (left aligned) -->
@@ -27,7 +27,7 @@
             @for (exp of experiences; track exp.id; let idx = $index; let last = $last) {
                 <!-- Experience item -->
                 <div
-                    class="timeline-item-wrapper relative"
+                    class="relative"
                     [style.animation-delay]="idx * 0.15 + 's'"
                 >
                     <div
@@ -80,7 +80,7 @@
                                     {{ exp.title }}
                                 </h3>
 
-                                <p class="text-slate-600 text-sm mt-1">
+                                <p class="text-slate-600 text- mt-1">
                                     {{ exp.company }} · {{ exp.location }}
                                 </p>
 
@@ -99,7 +99,7 @@
 
                                 <!-- Description -->
                                 <ul
-                                    class="mt-3 text-sm text-slate-600 space-y-1 list-disc list-inside"
+                                    class="mt-3 text-md text-slate-600 space-y-1 list-disc list-inside"
                                 >
                                     @for (desc of exp.description; track desc) {
                                         <li>{{ desc }}</li>

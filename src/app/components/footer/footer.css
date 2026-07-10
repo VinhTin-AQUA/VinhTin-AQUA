@@ -1,0 +1,23 @@
+/* style.css — custom styles không có trong Tailwind */
+.animate-pulse-slow {
+    animation: pulseSoft 2.8s ease-in-out infinite;
+}
+
+@keyframes pulseSoft {
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.03);
+    }
+}
+
+/* responsive fine-tune */
+@media (max-width: 640px) {
+    .border-t {
+        border-color: rgba(55, 65, 81, 0.4);
+    }
+}
