@@ -14,8 +14,8 @@
                     class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden theme-avatar-border shadow-lg hover:scale-105 transition duration-300 ease-in-out"
                 >
                     <img
-                        src="https://ui-avatars.com/api/?name=Alex+River&size=160&background=4F46E5&color=fff&bold=true"
-                        alt="Avatar of Alex River"
+                        [src]="meService.me().avatar"
+                        alt="Avatar"
                         class="w-full h-full object-cover"
                     />
                 </div>
@@ -26,10 +26,10 @@
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight theme-text-primary"
                 >
-                    Alex River
+                    {{ meService.me().name }}
                 </h1>
                 <p class="text-xl sm:text-2xl font-medium theme-text-accent">
-                    Senior Full-Stack Developer
+                    {{ meService.me().jobTitle }}
                 </p>
                 <p class="text-base sm:text-lg theme-text-secondary max-w-2xl leading-relaxed">
                     Crafting digital experiences with Angular, NestJS, and cloud-native tools.
@@ -38,16 +38,16 @@
 
                 <!-- contact row (links) -->
                 <div class="flex flex-wrap items-center gap-2 pt-2">
-                    @for (item of contactLinks; track item.label) {
+                    @for (item of meService.me().contacts; track item.name) {
                         <a
-                            [href]="item.url"
+                            [href]="item.link"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full theme-bg-accent theme-text-accent text-sm font-medium theme-border theme-bg-accent-hover transition duration-200 theme-shadow"
                         >
                             <!-- dynamic icon (simple emoji as placeholder) -->
-                            <span class="text-base">{{ item.icon }}</span>
-                            {{ item.label }}
+                            <app-icons [iconName]="item.icon"></app-icons>
+                            {{ item.name }}
                         </a>
                     }
                 </div>

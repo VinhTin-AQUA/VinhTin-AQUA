@@ -402,3 +402,47 @@
         opacity: 0;
     }
 }
+
+.timeline-dot-gradient {
+    background: linear-gradient(270deg, #2563eb, #6366f1, #10b981, #f59e0b, #fb7185, #2563eb);
+
+    background-size: 600% 600%;
+
+    animation: gradientShift 8s ease infinite;
+
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.2),
+        0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.timeline-line-gradient {
+    background: linear-gradient(180deg, #2563eb, #6366f1, #10b981, #f59e0b, #fb7185, #2563eb);
+
+    /* background-size: 100% 500%; */
+
+    /* animation: gradientFlow 5s linear infinite; */
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}

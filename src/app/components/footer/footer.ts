@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { MeService } from '../../services/me.service';
+import { Icons } from "../icons/icons";
 
 @Component({
     selector: 'app-footer',
-    imports: [],
+    imports: [Icons],
     templateUrl: './footer.html',
     styleUrl: './footer.css',
 })
@@ -16,4 +18,6 @@ export class Footer {
         { label: 'GitHub', href: '#', icon: '⌨' },
         { label: 'Twitter', href: '#', icon: '🐦' },
     ];
+
+    constructor(public meService: MeService) {}
 }

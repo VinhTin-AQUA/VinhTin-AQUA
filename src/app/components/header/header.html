@@ -7,7 +7,7 @@
             <div class="flex items-center gap-3">
                 <div class="relative">
                     <img
-                        src="https://ui-avatars.com/api/?name=John+Doe&size=40&background=4F46E5&color=fff&bold=true"
+                        [src]="meService.me().avatar"
                         alt="Avatar"
                         class="w-10 h-10 rounded-full avatar-ring-custom shadow-md transition-all hover:scale-105 cursor-pointer"
                     />
@@ -17,9 +17,9 @@
                 </div>
                 <div>
                     <h1 class="text-sm font-semibold text-primary-custom leading-tight">
-                        John Doe
+                        {{ meService.me().name }}
                     </h1>
-                    <p class="text-xs text-muted-custom">Frontend Dev</p>
+                    <p class="text-xs text-muted-custom">{{ meService.me().jobTitle }}</p>
                 </div>
             </div>
 
@@ -116,13 +116,15 @@
         <div class="flex items-center justify-between p-4 divider-custom border-b">
             <div class="flex items-center gap-3">
                 <img
-                    src="https://ui-avatars.com/api/?name=John+Doe&size=40&background=4F46E5&color=fff&bold=true"
+                    [src]="meService.me().avatar"
                     alt="Avatar"
                     class="w-10 h-10 rounded-full avatar-ring-custom shadow-md"
                 />
                 <div>
-                    <h2 class="text-sm font-semibold text-primary-custom">John Doe</h2>
-                    <p class="text-xs text-muted-custom">Frontend Dev</p>
+                    <h2 class="text-sm font-semibold text-primary-custom">
+                        {{ meService.me().name }}
+                    </h2>
+                    <p class="text-xs text-muted-custom">{{ meService.me().jobTitle }}</p>
                 </div>
             </div>
             <button

@@ -43,7 +43,7 @@
 /* Badge counter */
 .theme-badge {
     background-color: var(--brightWhite);
-    color: var(--foreground);
+    color: var(--black);
 }
 
 /* Project card */

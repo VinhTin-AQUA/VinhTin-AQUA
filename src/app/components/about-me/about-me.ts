@@ -1,41 +1,15 @@
 import { Component } from '@angular/core';
+import { MeService } from '../../services/me.service';
+import { Icons } from "../icons/icons";
 
 @Component({
     selector: 'app-about-me',
-    imports: [],
+    imports: [Icons],
     templateUrl: './about-me.html',
     styleUrl: './about-me.css',
 })
 export class AboutMe {
-    // Contact links data
-    contactLinks = [
-        {
-            label: 'Projects',
-            url: '#',
-            icon: '🚀',
-        },
-        {
-            label: 'GitHub',
-            url: 'https://github.com/yourusername',
-            icon: '💻',
-        },
-        {
-            label: 'Email',
-            url: 'mailto:your.email@example.com',
-            icon: '📧',
-        },
-        {
-            label: 'LinkedIn',
-            url: 'https://linkedin.com/in/yourusername',
-            icon: '🔗',
-        },
-        {
-            label: 'CV',
-            url: '#',
-            icon: '📄',
-        },
-    ];
-
+   
     // About blocks data
     aboutBlocks = [
         {
@@ -81,4 +55,6 @@ export class AboutMe {
         'Docker',
         'AWS',
     ];
+
+    constructor(public meService: MeService) {}
 }

@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { Icons } from '../icons/icons';
 import { ThemeService } from '../../services/theme.service';
+import { MeService } from '../../services/me.service';
 
 @Component({
     selector: 'app-header',
@@ -15,28 +16,21 @@ export class Header {
     // Menu items data
     menuItems = signal([
         {
-            label: 'Trang chủ',
+            label: 'About Me',
             href: '#',
             icon: '',
         },
         {
-            label: 'Dự án',
-            href: '#',
-            icon: '',
-        },
-        {
-            label: 'Dịch vụ',
-            href: '#',
-            icon: '',
-        },
-        {
-            label: 'Liên hệ',
+            label: 'Projects',
             href: '#',
             icon: '',
         },
     ]);
 
-    constructor(private themeService: ThemeService) {}
+    constructor(
+        private themeService: ThemeService,
+        public meService: MeService,
+    ) {}
 
     ngOnInit() {
         this.currentTheme.set(this.themeService.currentTheme());

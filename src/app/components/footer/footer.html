@@ -5,24 +5,27 @@
         <div class="flex flex-wrap items-center justify-between gap-4">
             <!-- Left: Name & Position -->
             <div class="flex items-center gap-3">
-                <h3 class="theme-footer-title text-lg font-semibold tracking-wide">John Carter</h3>
+                <h3 class="theme-footer-title text-lg font-semibold tracking-wide">
+                    {{ meService.me().name }}
+                </h3>
                 <span class="hidden sm:inline theme-footer-divider">|</span>
-                <p class="text-sm theme-footer-subtitle hidden sm:block">Senior Full‑Stack Developer</p>
+                <p class="text-sm theme-footer-subtitle hidden sm:block">
+                    {{ meService.me().jobTitle }}
+                </p>
             </div>
 
             <!-- Center: Contact icons in horizontal layout -->
             <div class="flex flex-wrap items-center gap-2">
-                @for (item of contactItems; track item.label) {
+                @for (item of meService.me().contacts; track item.name) {
                     <a
-                        [href]="item.href"
+                        [href]="item.link"
                         class="theme-footer-icon-wrapper group flex items-center justify-center w-9 h-9 rounded-full transition-all duration-300"
-                        [attr.aria-label]="item.label"
+                        [attr.aria-label]="item.name"
                     >
-                        <span
-                            class="theme-footer-icon group-hover:text-blue-400 text-base transition-colors"
-                        >
-                            {{ item.icon }}
-                        </span>
+                        <app-icons
+                            [iconName]="item.icon"
+                            class="h-5 w-5 theme-footer-icon group-hover:text-blue-400 text-base transition-colors"
+                        ></app-icons>
                     </a>
                 }
             </div>
@@ -37,7 +40,7 @@
                 <span
                     class="theme-footer-badge inline-block px-3 py-1 rounded-full text-[10px] font-mono tracking-wider animate-pulse-slow whitespace-nowrap"
                 >
-                    ✦ available
+                     {{meService.me().openToWork}}
                 </span>
             </div>
         </div>

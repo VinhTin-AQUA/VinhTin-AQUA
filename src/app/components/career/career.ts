@@ -92,16 +92,16 @@ export class Career {
     ];
 
     // Helper methods
-    getDotColor(color: string): string {
-        const colors: Record<string, string> = {
-            blue: 'bg-blue-600',
-            indigo: 'bg-indigo-500',
-            emerald: 'bg-emerald-500',
-            amber: 'bg-amber-500',
-            rose: 'bg-rose-400',
-        };
-        return colors[color] || colors['blue'];
-    }
+    // getDotColor(color: string): string {
+    //     const colors: Record<string, string> = {
+    //         blue: 'bg-blue-600',
+    //         indigo: 'bg-indigo-500',
+    //         emerald: 'bg-emerald-500',
+    //         amber: 'bg-amber-500',
+    //         rose: 'bg-rose-400',
+    //     };
+    //     return colors[color] || colors['blue'];
+    // }
 
     getDotColorHex(color: string): string {
         const colors: Record<string, string> = {
@@ -114,16 +114,16 @@ export class Career {
         return colors[color] || colors['blue'];
     }
 
-    getBadgeColor(color: string): string {
-        const colors: Record<string, string> = {
-            blue: 'text-blue-600 bg-blue-50',
-            indigo: 'text-indigo-600 bg-indigo-50',
-            emerald: 'text-emerald-600 bg-emerald-50',
-            amber: 'text-amber-600 bg-amber-50',
-            rose: 'text-rose-600 bg-rose-50',
-        };
-        return colors[color] || colors['blue'];
-    }
+    // getBadgeColor(color: string): string {
+    //     const colors: Record<string, string> = {
+    //         blue: 'text-blue-600 bg-blue-50',
+    //         indigo: 'text-indigo-600 bg-indigo-50',
+    //         emerald: 'text-emerald-600 bg-emerald-50',
+    //         amber: 'text-amber-600 bg-amber-50',
+    //         rose: 'text-rose-600 bg-rose-50',
+    //     };
+    //     return colors[color] || colors['blue'];
+    // }
 
     getBorderColor(color: string): string {
         const colors: Record<string, string> = {

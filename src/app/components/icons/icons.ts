@@ -1,6 +1,16 @@
 import { NgComponentOutlet } from '@angular/common';
 import { Component, Input, Type } from '@angular/core';
-import { CVIconComponent, DarkIconComponent, HomeIconComponent, LigthIconComponent, MenuIconComponent, XIconComponent } from './list-icons';
+import {
+    CVIconComponent,
+    DarkIconComponent,
+    EmailIconComponent,
+    GithubIconComponent,
+    HomeIconComponent,
+    LigthIconComponent,
+    LinkedInIconComponent,
+    MenuIconComponent,
+    XIconComponent,
+} from './list-icons';
 
 export const ICON_REGISTRY: Record<string, Type<any>> = {
     home: HomeIconComponent,
@@ -9,9 +19,22 @@ export const ICON_REGISTRY: Record<string, Type<any>> = {
     cv: CVIconComponent,
     menu: MenuIconComponent,
     x: XIconComponent,
+    email: EmailIconComponent,
+    linkedin: LinkedInIconComponent,
+    github: GithubIconComponent,
 };
 
-export type IconNames = 'home' | 'light' | 'dark' | 'cv' | 'menu' | 'x' | 'error';
+export type IconNames =
+    | 'home'
+    | 'light'
+    | 'dark'
+    | 'cv'
+    | 'menu'
+    | 'x'
+    | 'email'
+    | 'linkedin'
+    | 'github'
+    | 'error';
 
 @Component({
     selector: 'app-icons',
