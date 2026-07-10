@@ -7,35 +7,38 @@
         >
             Career path
         </span>
+
         <h1 class="text-4xl sm:text-5xl font-bold mt-4 tracking-tight theme-header-title">
             Experience Timeline
         </h1>
+
         <p class="max-w-xl mx-auto mt-3 text-lg theme-header-subtitle">
             Professional journey · {{ experiences[0].period.split('–')[0] }} to present
         </p>
     </div>
 
-    <!-- ====== TIMELINE ====== -->
+    <!-- Timeline -->
     <div class="relative max-w-5xl mx-auto">
-        <!-- ===== items ===== -->
-        <div class="space-y-0 relative">
+        <div class="relative">
             @for (exp of experiences; track exp.id; let idx = $index; let last = $last) {
-                <!-- Experience item -->
-                <div class="relative" [style.animation-delay]="idx * 0.15 + 's'">
-                    <div
-                        class="timeline-item relative flex flex-col sm:flex-row items-start gap-4 sm:gap-6 pl-10 sm:pl-0 py-4"
-                    >
+                <div class="relative py-4" [style.animation-delay]="idx * 0.15 + 's'">
+                    <!-- Item -->
+                    <div class="relative">
                         <!-- Dot -->
-                        <div class="timeline-dot" [class]="getDotColor(exp.color)">
+                        <div
+                            class="absolute left-4 sm:left-0 top-8 -translate-x-1/2 z-20 w-5 h-5 rounded-full flex items-center justify-center"
+                            [class]="getDotColor(exp.color)"
+                        >
                             <div
                                 class="absolute inset-1 rounded-full bg-white/30 animate-ping"
                             ></div>
                         </div>
 
                         @if (!last) {
-                            <!-- Line - nối từ dot hiện tại đến dot tiếp theo -->
+                            <!-- Line -->
                             <div
-                                class="timeline-line connecting-line"
+                                class="absolute left-4 sm:left-0 top-12 -translate-x-1/2 w-1 z-10"
+                                style="height: calc(100% + 2rem)"
                                 [style.background]="
                                     getLineGradient(exp.color, experiences[idx + 1].color)
                                 "
@@ -43,11 +46,12 @@
                         }
 
                         <!-- Content -->
-                        <div class="w-full sm:pl-12 theme-bg-primary rounded-md">
+                        <div class="w-full pl-12 sm:pl-12">
                             <div
                                 class="theme-card-hover rounded-2xl p-5 sm:p-6 text-left"
                                 [class]="getBorderColor(exp.color)"
                             >
+                                <!-- Period -->
                                 <div class="flex flex-wrap items-center gap-2">
                                     <span
                                         class="text-xs font-semibold px-3 py-1 rounded-full inline-block theme-period-badge"
@@ -64,16 +68,18 @@
                                     }
                                 </div>
 
+                                <!-- Title -->
                                 <h3 class="text-xl font-bold mt-2 theme-text-primary">
                                     {{ exp.title }}
                                 </h3>
 
-                                <p class="text- mt-1 theme-company-text">
+                                <!-- Company -->
+                                <p class="mt-1 theme-company-text">
                                     {{ exp.company }} · {{ exp.location }}
                                 </p>
 
                                 <!-- Technologies -->
-                                @if (exp.technologies && exp.technologies.length > 0) {
+                                @if (exp.technologies?.length) {
                                     <div class="flex flex-wrap gap-1.5 mt-3">
                                         @for (tech of exp.technologies; track tech) {
                                             <span
@@ -99,7 +105,5 @@
                 </div>
             }
         </div>
-        <!-- end items -->
     </div>
-    <!-- end relative -->
 </main>
