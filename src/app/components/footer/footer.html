@@ -1,1 +1,48 @@
-<p>footer works!</p>
+<!-- app.component.html -->
+<footer class="theme-footer py-6 px-6 mt-auto">
+    <div class="max-w-7xl mx-auto">
+        <!-- All items in one row: name, contacts, year -->
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <!-- Left: Name & Position -->
+            <div class="flex items-center gap-3">
+                <h3 class="theme-footer-title text-lg font-semibold tracking-wide">
+                    {{ meService.me().name }}
+                </h3>
+                <span class="hidden sm:inline theme-footer-divider">|</span>
+                <p class="text-sm theme-footer-subtitle hidden sm:block">
+                    {{ meService.me().jobTitle }}
+                </p>
+            </div>
+
+            <!-- Center: Contact icons in horizontal layout -->
+            <div class="flex flex-wrap items-center gap-2">
+                @for (item of meService.me().contacts; track item.name) {
+                    <a
+                        [href]="item.link"
+                        class="theme-footer-icon-wrapper group flex items-center justify-center w-9 h-9 rounded-full transition-all duration-300"
+                        [attr.aria-label]="item.name"
+                    >
+                        <app-icons
+                            [iconName]="item.icon"
+                            class="h-5 w-5 theme-footer-icon group-hover:text-blue-400 text-base transition-colors"
+                        ></app-icons>
+                    </a>
+                }
+            </div>
+
+            <!-- Right: Current year & available for hire -->
+            <div class="flex items-center gap-3">
+                <span class="text-sm theme-footer-year flex items-center gap-1">
+                    <span class="theme-footer-year-icon">©</span>
+                    {{ currentYear }}
+                </span>
+                <span class="theme-footer-divider hidden sm:inline">|</span>
+                <span
+                    class="theme-footer-badge inline-block px-3 py-1 rounded-full text-[10px] font-mono tracking-wider animate-pulse-slow whitespace-nowrap"
+                >
+                     {{meService.me().openToWork}}
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>

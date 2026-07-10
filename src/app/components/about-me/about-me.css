@@ -1,0 +1,123 @@
+/* Component-specific theme variables mapping */
+:host {
+    /* Background colors */
+    --theme-bg-primary: var(--background);
+    --theme-bg-secondary: var(--selectionInactiveBackground);
+    --theme-bg-card: var(--background);
+    --theme-bg-card-alt: var(--selectionBackground);
+
+    /* Text colors */
+    --theme-text-primary: var(--foreground);
+    --theme-text-secondary: var(--white);
+    --theme-text-muted: var(--brightBlack);
+
+    /* Accent colors - using blue as primary accent */
+    --theme-accent: var(--blue);
+    --theme-accent-light: var(--brightBlue);
+    --theme-accent-dark: var(--blue);
+    --theme-accent-bg: var(--selectionBackground);
+    --theme-accent-bg-hover: var(--selectionBackground);
+
+    /* Border colors */
+    --theme-border: var(--selectionInactiveBackground);
+    --theme-border-light: var(--selectionBackground);
+
+    /* State colors */
+    --theme-shadow: var(--selectionInactiveBackground);
+    --theme-shadow-hover: var(--selectionBackground);
+}
+
+/* Background replacements */
+.theme-bg-primary {
+    background-color: var(--theme-bg-primary);
+}
+
+.theme-bg-secondary {
+    background-color: var(--theme-bg-secondary);
+}
+
+.theme-bg-card {
+    background-color: var(--theme-bg-card);
+}
+
+.theme-bg-card-alt {
+    background-color: var(--theme-bg-card-alt);
+}
+
+.theme-bg-accent {
+    background-color: var(--theme-accent-bg);
+}
+
+.theme-bg-accent-hover:hover {
+    background-color: var(--theme-accent-bg-hover);
+}
+
+/* Text color replacements */
+.theme-text-primary {
+    color: var(--theme-text-primary);
+}
+
+.theme-text-secondary {
+    color: var(--theme-text-secondary);
+}
+
+.theme-text-muted {
+    color: var(--theme-text-muted);
+}
+
+.theme-text-accent {
+    color: var(--theme-accent);
+}
+
+.theme-text-accent-light {
+    color: var(--theme-accent-light);
+}
+
+/* Border replacements */
+.theme-border {
+    border-color: var(--theme-border);
+}
+
+.theme-border-light {
+    border-color: var(--theme-border-light);
+}
+
+/* Shadow replacements */
+.theme-shadow {
+    box-shadow:
+        0 1px 3px 0 var(--theme-shadow),
+        0 1px 2px -1px var(--theme-shadow);
+}
+
+.theme-shadow-hover:hover {
+    box-shadow:
+        0 10px 15px -3px var(--theme-shadow-hover),
+        0 4px 6px -4px var(--theme-shadow-hover);
+}
+
+/* Accent button */
+.theme-btn-accent {
+    background-color: var(--theme-accent);
+    color: var(--cursorAccent);
+}
+
+.theme-btn-accent:hover {
+    background-color: var(--theme-accent-dark);
+}
+
+/* Tag/chip styling */
+.theme-tag {
+    background-color: var(--theme-accent-bg);
+    color: var(--theme-accent);
+    border-color: var(--theme-border-light);
+}
+
+/* Avatar border */
+.theme-avatar-border {
+    border-color: var(--theme-accent);
+}
+
+/* Divider */
+.theme-divider {
+    border-color: var(--theme-border);
+}

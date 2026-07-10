@@ -8,6 +8,8 @@ import { firstValueFrom } from 'rxjs';
 })
 export class ThemeService {
     appThemes = signal<Record<string, AppTheme>>({});
+    currentTheme = signal<AppThemeType>('dark');
+    themeKey = 'theme';
 
     constructor(private http: HttpClient) {}
 
@@ -16,12 +18,18 @@ export class ThemeService {
         const themes = await firstValueFrom(
             this.http.get<Record<string, AppTheme>>('themes/themes.json'),
         );
-
         this.appThemes.set(themes);
-        this.applyThemeToDOM('light');
+        const theme = localStorage.getItem(this.themeKey) as AppThemeType;
+
+        if (theme) {
+            this.applyThemeToDOM(theme);
+        } else {
+            this.applyThemeToDOM(this.currentTheme());
+        }
     }
 
-    private applyThemeToDOM(type: AppThemeType) {
+    applyThemeToDOM(type: AppThemeType) {
+        localStorage.setItem(this.themeKey, type);
         const root = document.documentElement;
         const selectedTheme: AppTheme = this.appThemes()[type];
 
