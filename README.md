@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/VinhTin-AQUA">
-    <img alt="GitPoint" title="GitPoint" style="border-radius: 1000px" src="./public/avatar.png" width="250">
+    <img alt="GitPoint" title="GitPoint" style="border-radius: 1000px" src="./public/logo.png" width="250">
   </a>
 </p>
 
@@ -15,7 +15,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/tin-ho-vinh/">💼 LinkedIn</a> • 
   <a href="mailto:tinhovinh@gmail.com">📧 Email</a> • 
-  <a href="mailto:tinhovinh@gmail.com">👁️‍🗨️ Portfolio</a>
+  <a href="https://newtun.is-a.dev/">👁️‍🗨️ Portfolio</a>
 </p>
 
 ---
