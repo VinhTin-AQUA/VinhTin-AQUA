@@ -98,7 +98,7 @@
 
 /* Mobile menu specific */
 .mobile-menu-custom {
-    background-color: var(--selectionBackground);
+    background-color: var(--background);
     border-color: var(--selectionBorder);
 }
 

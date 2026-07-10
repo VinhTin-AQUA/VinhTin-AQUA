@@ -8,6 +8,7 @@ import { firstValueFrom } from 'rxjs';
 })
 export class ThemeService {
     appThemes = signal<Record<string, AppTheme>>({});
+    currentTheme = signal<AppThemeType>('dark');
 
     constructor(private http: HttpClient) {}
 
@@ -18,10 +19,10 @@ export class ThemeService {
         );
 
         this.appThemes.set(themes);
-        this.applyThemeToDOM('dark');
+        this.applyThemeToDOM(this.currentTheme());
     }
 
-    private applyThemeToDOM(type: AppThemeType) {
+    applyThemeToDOM(type: AppThemeType) {
         const root = document.documentElement;
         const selectedTheme: AppTheme = this.appThemes()[type];
 

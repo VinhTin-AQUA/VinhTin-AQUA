@@ -94,3 +94,43 @@ export class DarkIconComponent {
 export class CVIconComponent {
     @Input() iconClass = 'w-5 h-5';
 }
+
+@Component({
+    selector: 'menu-icon',
+    standalone: true,
+    template: `
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            [class]="iconClass"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+        >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    `,
+})
+export class MenuIconComponent {
+    @Input() iconClass = 'w-5 h-5';
+}
+
+@Component({
+    selector: 'x-icon',
+    standalone: true,
+    template: `
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            [class]="iconClass"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+        >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    `,
+})
+export class XIconComponent {
+    @Input() iconClass = 'w-5 h-5';
+}
