@@ -1,248 +1,404 @@
 /* ===== THEME-BASED COLORS ===== */
 /* Background & Text */
 .theme-bg-primary {
-  background-color: var(--background);
+    background-color: var(--background);
 }
 
 .theme-text-primary {
-  color: var(--foreground);
+    color: var(--foreground);
 }
 
 .theme-text-secondary {
-  color: var(--white);
+    color: var(--white);
 }
 
 /* Badge colors */
 .theme-badge-blue {
-  background-color: var(--selectionBackground);
-  color: var(--blue);
-  border-color: var(--blue);
+    background-color: var(--selectionBackground);
+    color: var(--blue);
+    border-color: var(--blue);
 }
 
 .theme-badge-green {
-  background-color: var(--selectionBackground);
-  color: var(--green);
+    background-color: var(--selectionBackground);
+    color: var(--green);
 }
 
 .theme-badge-purple {
-  background-color: var(--selectionBackground);
-  color: var(--magenta);
+    background-color: var(--selectionBackground);
+    color: var(--magenta);
 }
 
 .theme-badge-orange {
-  background-color: var(--selectionBackground);
-  color: var(--yellow);
+    background-color: var(--selectionBackground);
+    color: var(--yellow);
+}
+
+.theme-badge-red {
+    background-color: var(--selectionBackground);
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.theme-badge-amber {
+    background-color: var(--selectionBackground);
+    color: #f59e0b;
+    border-color: #f59e0b;
 }
 
 /* Card border colors */
 .theme-border-blue {
-  border-left: 4px solid var(--blue);
+    border-left: 4px solid var(--blue);
 }
 
 .theme-border-green {
-  border-left: 4px solid var(--green);
+    border-left: 4px solid var(--green);
 }
 
 .theme-border-purple {
-  border-left: 4px solid var(--magenta);
+    border-left: 4px solid var(--magenta);
 }
 
 .theme-border-orange {
-  border-left: 4px solid var(--yellow);
+    border-left: 4px solid var(--yellow);
+}
+
+.theme-border-red {
+    border-left: 4px solid var(--red);
+}
+
+.theme-border-amber {
+    border-left: 4px solid #f59e0b;
 }
 
 /* Dot colors */
 .theme-dot-blue {
-  background-color: var(--blue);
-  border-color: var(--background);
+    background-color: var(--blue);
+    border-color: var(--background);
 }
 
 .theme-dot-green {
-  background-color: var(--green);
-  border-color: var(--background);
+    background-color: var(--green);
+    border-color: var(--background);
 }
 
 .theme-dot-purple {
-  background-color: var(--magenta);
-  border-color: var(--background);
+    background-color: var(--magenta);
+    border-color: var(--background);
 }
 
 .theme-dot-orange {
-  background-color: var(--yellow);
-  border-color: var(--background);
+    background-color: var(--yellow);
+    border-color: var(--background);
+}
+
+.theme-dot-red {
+    background-color: var(--red);
+    border-color: var(--background);
+}
+
+.theme-dot-amber {
+    background-color: #f59e0b;
+    border-color: var(--background);
 }
 
 /* Header colors */
 .theme-header-badge {
-  background-color: var(--selectionBackground);
-  color: var(--blue);
-  border-color: var(--blue);
+    background-color: var(--selectionBackground);
+    color: var(--blue);
+    border-color: var(--blue);
 }
 
 .theme-header-title {
-  color: var(--foreground);
+    color: var(--foreground);
 }
 
 .theme-header-subtitle {
-  color: var(--white);
+    color: var(--white);
 }
 
 /* Current badge */
 .theme-current-badge {
-  color: var(--green);
-  background-color: var(--selectionBackground);
+    color: var(--green);
+    background-color: var(--selectionBackground);
 }
 
 /* Tech tags */
 .theme-tech-tag {
-  background-color: var(--selectionInactiveBackground);
-  color: var(--white);
+    background-color: var(--selectionInactiveBackground);
+    color: var(--white);
 }
 
 /* Description text */
 .theme-desc-text {
-  color: var(--white);
+    color: var(--white);
 }
 
 /* Card hover effect */
 .theme-card-hover {
-  background-color: var(--background);
-  transition: all 0.2s ease;
+    background-color: var(--background);
+    transition: all 0.2s ease;
 }
 
 .theme-card-hover:hover {
-  background-color: var(--selectionBackground);
+    background-color: var(--selectionBackground);
 }
 
 /* Company & location text */
 .theme-company-text {
-  color: var(--white);
+    color: var(--white);
 }
 
 /* Period badge */
 .theme-period-badge {
-  background-color: var(--selectionBackground);
-  color: var(--foreground);
+    background-color: var(--selectionBackground);
+    color: var(--foreground);
+}
+
+/* ===== LINE GRADIENT CLASSES (màu sáng nổi bật) ===== */
+/* Blue combinations */
+.line-gradient-blue-blue {
+    background: linear-gradient(to bottom, #60a5fa, #60a5fa);
+}
+.line-gradient-blue-green {
+    background: linear-gradient(to bottom, #60a5fa, #6ee7b7);
+}
+.line-gradient-blue-purple {
+    background: linear-gradient(to bottom, #60a5fa, #c084fc);
+}
+.line-gradient-blue-orange {
+    background: linear-gradient(to bottom, #60a5fa, #fcd34d);
+}
+.line-gradient-blue-red {
+    background: linear-gradient(to bottom, #60a5fa, #fca5a5);
+}
+.line-gradient-blue-amber {
+    background: linear-gradient(to bottom, #60a5fa, #fbbf24);
+}
+
+/* Green combinations */
+.line-gradient-green-blue {
+    background: linear-gradient(to bottom, #6ee7b7, #60a5fa);
+}
+.line-gradient-green-green {
+    background: linear-gradient(to bottom, #6ee7b7, #6ee7b7);
+}
+.line-gradient-green-purple {
+    background: linear-gradient(to bottom, #6ee7b7, #c084fc);
+}
+.line-gradient-green-orange {
+    background: linear-gradient(to bottom, #6ee7b7, #fcd34d);
+}
+.line-gradient-green-red {
+    background: linear-gradient(to bottom, #6ee7b7, #fca5a5);
+}
+.line-gradient-green-amber {
+    background: linear-gradient(to bottom, #6ee7b7, #fbbf24);
+}
+
+/* Purple combinations */
+.line-gradient-purple-blue {
+    background: linear-gradient(to bottom, #c084fc, #60a5fa);
+}
+.line-gradient-purple-green {
+    background: linear-gradient(to bottom, #c084fc, #6ee7b7);
+}
+.line-gradient-purple-purple {
+    background: linear-gradient(to bottom, #c084fc, #c084fc);
+}
+.line-gradient-purple-orange {
+    background: linear-gradient(to bottom, #c084fc, #fcd34d);
+}
+.line-gradient-purple-red {
+    background: linear-gradient(to bottom, #c084fc, #fca5a5);
+}
+.line-gradient-purple-amber {
+    background: linear-gradient(to bottom, #c084fc, #fbbf24);
+}
+
+/* Orange combinations */
+.line-gradient-orange-blue {
+    background: linear-gradient(to bottom, #fcd34d, #60a5fa);
+}
+.line-gradient-orange-green {
+    background: linear-gradient(to bottom, #fcd34d, #6ee7b7);
+}
+.line-gradient-orange-purple {
+    background: linear-gradient(to bottom, #fcd34d, #c084fc);
+}
+.line-gradient-orange-orange {
+    background: linear-gradient(to bottom, #fcd34d, #fcd34d);
+}
+.line-gradient-orange-red {
+    background: linear-gradient(to bottom, #fcd34d, #fca5a5);
+}
+.line-gradient-orange-amber {
+    background: linear-gradient(to bottom, #fcd34d, #fbbf24);
+}
+
+/* Red combinations */
+.line-gradient-red-blue {
+    background: linear-gradient(to bottom, #fca5a5, #60a5fa);
+}
+.line-gradient-red-green {
+    background: linear-gradient(to bottom, #fca5a5, #6ee7b7);
+}
+.line-gradient-red-purple {
+    background: linear-gradient(to bottom, #fca5a5, #c084fc);
+}
+.line-gradient-red-orange {
+    background: linear-gradient(to bottom, #fca5a5, #fcd34d);
+}
+.line-gradient-red-red {
+    background: linear-gradient(to bottom, #fca5a5, #fca5a5);
+}
+.line-gradient-red-amber {
+    background: linear-gradient(to bottom, #fca5a5, #fbbf24);
+}
+
+/* Amber combinations */
+.line-gradient-amber-blue {
+    background: linear-gradient(to bottom, #fbbf24, #60a5fa);
+}
+.line-gradient-amber-green {
+    background: linear-gradient(to bottom, #fbbf24, #6ee7b7);
+}
+.line-gradient-amber-purple {
+    background: linear-gradient(to bottom, #fbbf24, #c084fc);
+}
+.line-gradient-amber-orange {
+    background: linear-gradient(to bottom, #fbbf24, #fcd34d);
+}
+.line-gradient-amber-red {
+    background: linear-gradient(to bottom, #fbbf24, #fca5a5);
+}
+.line-gradient-amber-amber {
+    background: linear-gradient(to bottom, #fbbf24, #fbbf24);
 }
 
 /* ===== TIMELINE CUSTOM STYLES ===== */
 .timeline-item {
-  --timeline-x: 20px;
-  position: relative;
+    --timeline-x: 20px;
+    position: relative;
 }
 
 /* Dot positioning */
 .timeline-dot {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: var(--timeline-x);
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 9999px;
-  border-width: 3px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  z-index: 20;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: var(--timeline-x);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+    border-width: 3px;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 20;
 }
 
 /* Line - chỉ nối giữa 2 dot */
 .timeline-line {
-  position: absolute;
-  top: 50%;
-  left: var(--timeline-x);
-  width: 2px;
-  height: calc(100% + 2rem); /* Nối từ dot hiện tại đến dot tiếp theo */
-  transform: translate(-50%, 0);
-  z-index: 10;
-  transform-origin: top center;
+    position: absolute;
+    top: 50%;
+    left: var(--timeline-x);
+    width: 2px;
+    height: calc(100% + 2rem);
+    transform: translate(-50%, 0);
+    z-index: 10;
+    transform-origin: top center;
 }
 
 /* Mobile */
 @media (max-width: 639px) {
-  .timeline-line {
-    left: 20px;
-    height: calc(100% + 2rem);
-  }
+    .timeline-line {
+        left: 20px;
+        height: calc(100% + 2rem);
+    }
 }
 
 /* Desktop */
 @media (min-width: 640px) {
-  .timeline-item {
-    --timeline-x: 0px;
-  }
-  
-  .timeline-dot {
-    left: 0;
-    transform: translate(-50%, -50%);
-  }
-  
-  .timeline-line {
-    left: 0;
-    height: calc(100% + 2rem);
-    transform: translateX(-50%);
-  }
+    .timeline-item {
+        --timeline-x: 0px;
+    }
+
+    .timeline-dot {
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .timeline-line {
+        left: 0;
+        height: calc(100% + 2rem);
+        transform: translateX(-50%);
+    }
 }
 
 /* Animation classes */
 .dot-animation {
-  animation: dotPulse 2s ease-in-out infinite;
+    animation: dotPulse 2s ease-in-out infinite;
 }
 
 @keyframes dotPulse {
-  0%, 100% {
-    transform: translateY(-50%) scale(1);
-  }
-  50% {
-    transform: translateY(-50%) scale(1.1);
-  }
+    0%,
+    100% {
+        transform: translateY(-50%) scale(1);
+    }
+    50% {
+        transform: translateY(-50%) scale(1.1);
+    }
 }
 
 @media (min-width: 640px) {
-  @keyframes dotPulse {
-    0%, 100% {
-      transform: translate(-50%, -50%) scale(1);
+    @keyframes dotPulse {
+        0%,
+        100% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
     }
-    50% {
-      transform: translate(-50%, -50%) scale(1.1);
-    }
-  }
 }
 
 .connecting-line {
-  animation: lineGrow 0.6s ease-out forwards;
+    animation: lineGrow 0.6s ease-out forwards;
 }
 
 @keyframes lineGrow {
-  from {
-    transform: translateX(-50%) scaleY(0);
-    transform-origin: top center;
-  }
-  to {
-    transform: translateX(-50%) scaleY(1);
-    transform-origin: top center;
-  }
+    from {
+        transform: translateX(-50%) scaleY(0);
+        transform-origin: top center;
+    }
+    to {
+        transform: translateX(-50%) scaleY(1);
+        transform-origin: top center;
+    }
 }
 
 .card-hover {
-  transition: all 0.3s ease;
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
+    transition: all 0.3s ease;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
 }
 
 .card-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--selectionBackground);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--selectionBackground);
 }
 
 /* Ping animation for dot */
 .timeline-dot .animate-ping {
-  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+    animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 @keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
+    75%,
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }

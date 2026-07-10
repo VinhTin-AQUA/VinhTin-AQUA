@@ -21,18 +21,12 @@
         <div class="space-y-0 relative">
             @for (exp of experiences; track exp.id; let idx = $index; let last = $last) {
                 <!-- Experience item -->
-                <div
-                    class="relative"
-                    [style.animation-delay]="idx * 0.15 + 's'"
-                >
+                <div class="relative" [style.animation-delay]="idx * 0.15 + 's'">
                     <div
                         class="timeline-item relative flex flex-col sm:flex-row items-start gap-4 sm:gap-6 pl-10 sm:pl-0 py-4"
                     >
                         <!-- Dot -->
-                        <div
-                            class="timeline-dot"
-                            [class]="getDotColor(exp.color)"
-                        >
+                        <div class="timeline-dot" [class]="getDotColor(exp.color)">
                             <div
                                 class="absolute inset-1 rounded-full bg-white/30 animate-ping"
                             ></div>

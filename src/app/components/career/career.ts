@@ -91,45 +91,55 @@ export class Career {
         },
     ];
 
+    // Helper methods
     getDotColor(color: string): string {
-        const colorMap: { [key: string]: string } = {
-            blue: 'theme-dot-blue',
-            green: 'theme-dot-green',
-            purple: 'theme-dot-purple',
-            orange: 'theme-dot-orange',
+        const colors: Record<string, string> = {
+            blue: 'bg-blue-600',
+            indigo: 'bg-indigo-500',
+            emerald: 'bg-emerald-500',
+            amber: 'bg-amber-500',
+            rose: 'bg-rose-400',
         };
-        return colorMap[color] || 'theme-dot-blue';
+        return colors[color] || colors['blue'];
     }
 
-    getBorderColor(color: string): string {
-        const colorMap: { [key: string]: string } = {
-            blue: 'theme-border-blue',
-            green: 'theme-border-green',
-            purple: 'theme-border-purple',
-            orange: 'theme-border-orange',
+    getDotColorHex(color: string): string {
+        const colors: Record<string, string> = {
+            blue: '#2563eb',
+            indigo: '#6366f1',
+            emerald: '#10b981',
+            amber: '#f59e0b',
+            rose: '#fb7185',
         };
-        return colorMap[color] || 'theme-border-blue';
+        return colors[color] || colors['blue'];
     }
 
     getBadgeColor(color: string): string {
-        const colorMap: { [key: string]: string } = {
-            blue: 'theme-badge-blue',
-            green: 'theme-badge-green',
-            purple: 'theme-badge-purple',
-            orange: 'theme-badge-orange',
+        const colors: Record<string, string> = {
+            blue: 'text-blue-600 bg-blue-50',
+            indigo: 'text-indigo-600 bg-indigo-50',
+            emerald: 'text-emerald-600 bg-emerald-50',
+            amber: 'text-amber-600 bg-amber-50',
+            rose: 'text-rose-600 bg-rose-50',
         };
-        return colorMap[color] || 'theme-badge-blue';
+        return colors[color] || colors['blue'];
     }
 
-    getLineGradient(color1: string, color2: string): string {
-        const colorMap: { [key: string]: string } = {
-            blue: 'var(--blue)',
-            green: 'var(--green)',
-            purple: 'var(--magenta)',
-            orange: 'var(--yellow)',
+    getBorderColor(color: string): string {
+        const colors: Record<string, string> = {
+            blue: 'border-blue-200',
+            indigo: 'border-indigo-200',
+            emerald: 'border-emerald-200',
+            amber: 'border-amber-200',
+            rose: 'border-rose-200',
         };
-        const c1 = colorMap[color1] || 'var(--blue)';
-        const c2 = colorMap[color2] || 'var(--blue)';
-        return `linear-gradient(to bottom, ${c1}, ${c2})`;
+        return colors[color] || colors['blue'];
+    }
+
+    // Get gradient color for connecting line
+    getLineGradient(color1: string, color2: string): string {
+        const hex1 = this.getDotColorHex(color1);
+        const hex2 = this.getDotColorHex(color2);
+        return `linear-gradient(to bottom, ${hex1}, ${hex2})`;
     }
 }
