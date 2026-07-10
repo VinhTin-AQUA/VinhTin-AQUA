@@ -1,3 +1,5 @@
+/* app.component.css */
+
 /* ----- custom CSS animations (pure) ----- */
 @keyframes fadeSlideUp {
     0% {
@@ -9,6 +11,7 @@
         transform: translateY(0);
     }
 }
+
 @keyframes pulseGlow {
     0%,
     100% {
@@ -18,12 +21,15 @@
         box-shadow: 0 0 0 8px rgba(99, 102, 241, 0.05);
     }
 }
+
 .card-animate {
     animation: fadeSlideUp 0.5s ease forwards;
 }
+
 .badge-pulse {
     animation: pulseGlow 2.5s infinite;
 }
+
 /* custom hover lift (not in tailwind) */
 .hover-lift {
     transition:
@@ -34,6 +40,7 @@
     transform: translateY(-4px);
     box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
 }
+
 /* gradient text – pure CSS */
 .gradient-text {
     background: linear-gradient(135deg, #4f46e5, #7c3aed);
@@ -41,15 +48,264 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 /* custom scrollbar (optional) */
 ::-webkit-scrollbar {
     width: 6px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f5f9;
+    background: var(--background);
     border-radius: 12px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #a5b4fc;
+    background: var(--blue);
     border-radius: 12px;
+}
+
+/* ----- Custom theme classes (using CSS variables from theme) ----- */
+
+/* Background gradient cho toàn trang */
+.theme-bg-gradient {
+    background: linear-gradient(135deg, var(--background), var(--selectionInactiveBackground));
+}
+
+/* Card styles */
+.theme-card {
+    background: var(--background);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--selectionInactiveBackground);
+}
+
+/* Icon background */
+.theme-icon-bg {
+    background: var(--selectionBackground);
+}
+
+/* Text colors */
+.theme-text-primary {
+    color: var(--foreground);
+}
+
+.theme-text-secondary {
+    color: var(--white);
+}
+
+.theme-text-muted {
+    color: var(--brightBlack);
+}
+
+/* Accent colors */
+.theme-accent-blue {
+    color: var(--blue);
+}
+
+.theme-accent-purple {
+    color: var(--magenta);
+}
+
+.theme-accent-green {
+    color: var(--green);
+}
+
+.theme-accent-red {
+    color: var(--red);
+}
+
+.theme-accent-yellow {
+    color: var(--yellow);
+}
+
+.theme-accent-cyan {
+    color: var(--cyan);
+}
+
+/* Border/Divider */
+.theme-divider {
+    border-top: 1px solid var(--selectionInactiveBackground);
+}
+
+/* Gradient primary */
+.theme-gradient-primary {
+    background: linear-gradient(135deg, var(--blue), var(--magenta));
+}
+
+/* Dot colors */
+.theme-dot-blue {
+    background: var(--blue);
+}
+
+.theme-dot-purple {
+    background: var(--magenta);
+}
+
+.theme-dot-green {
+    background: var(--green);
+}
+
+.theme-dot-red {
+    background: var(--red);
+}
+
+.theme-dot-yellow {
+    background: var(--yellow);
+}
+
+.theme-dot-cyan {
+    background: var(--cyan);
+}
+
+/* Bright accent colors */
+.theme-bright-blue {
+    color: var(--brightBlue);
+}
+
+.theme-bright-purple {
+    color: var(--brightMagenta);
+}
+
+.theme-bright-green {
+    color: var(--brightGreen);
+}
+
+.theme-bright-red {
+    color: var(--brightRed);
+}
+
+.theme-bright-yellow {
+    color: var(--brightYellow);
+}
+
+.theme-bright-cyan {
+    color: var(--brightCyan);
+}
+
+/* Glass morphism với theme */
+.theme-glass {
+    background: var(--background);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--selectionInactiveBackground);
+}
+
+.theme-glass-dark {
+    background: var(--selectionInactiveBackground);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--white);
+}
+
+/* Shadow với theme accent */
+.theme-shadow-accent {
+    box-shadow: 0 4px 14px var(--selectionBackground);
+}
+
+.theme-shadow-subtle {
+    box-shadow: 0 2px 8px var(--selectionInactiveBackground);
+}
+
+/* Text với theme gradient */
+.theme-text-gradient {
+    background: linear-gradient(135deg, var(--blue), var(--magenta));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.theme-text-gradient-bright {
+    background: linear-gradient(135deg, var(--brightBlue), var(--brightMagenta));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Status indicators */
+.theme-status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.theme-status-dot-active {
+    background: var(--green);
+}
+
+.theme-status-dot-inactive {
+    background: var(--red);
+}
+
+.theme-status-dot-pending {
+    background: var(--yellow);
+}
+
+/* Tag/Badge styles */
+.theme-tag {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.theme-tag-blue {
+    background: var(--selectionBackground);
+    color: var(--blue);
+}
+
+.theme-tag-purple {
+    background: var(--selectionBackground);
+    color: var(--magenta);
+}
+
+.theme-tag-green {
+    background: var(--selectionBackground);
+    color: var(--green);
+}
+
+.theme-tag-red {
+    background: var(--selectionBackground);
+    color: var(--red);
+}
+
+.theme-tag-yellow {
+    background: var(--selectionBackground);
+    color: var(--yellow);
+}
+
+/* Button styles */
+.theme-btn-primary {
+    background: var(--blue);
+    color: var(--cursorAccent);
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.theme-btn-primary:hover {
+    background: var(--brightBlue);
+    transform: translateY(-1px);
+}
+
+.theme-btn-secondary {
+    background: var(--selectionInactiveBackground);
+    color: var(--foreground);
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.theme-btn-secondary:hover {
+    background: var(--white);
+}
+
+/* Input field styles */
+.theme-input {
+    background: var(--background);
+    border: 1px solid var(--selectionInactiveBackground);
+    color: var(--foreground);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.theme-input:focus {
+    border-color: var(--blue);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--selectionBackground);
 }
