@@ -36,7 +36,7 @@
                 </p>
 
                 <!-- contact row (links) -->
-                <div class="flex flex-wrap items-center gap-2 pt-2">
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 pt-2">
                     @for (item of meService.me().contacts; track item.name) {
                         <a
                             [href]="item.link"

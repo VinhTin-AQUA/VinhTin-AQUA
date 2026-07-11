@@ -80,7 +80,7 @@
 
 /* Status indicators */
 .status-online-custom {
-    background-color: var(--selectionHighlight);
+    /* background-color: var(--selectionHighlight); */
 }
 
 .status-offline-custom {

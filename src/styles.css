@@ -5,3 +5,20 @@
 html {
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 5px; /* width of the entire scrollbar */
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background); /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--foreground); /* color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brightBlack); /* color of the scroll thumb on hover */
+}
