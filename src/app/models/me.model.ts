@@ -10,4 +10,5 @@ export interface Me {
     contacts: Contact[];
     openToWork: string;
     avatar: string;
+    avatartWithSunglass: string;
 }

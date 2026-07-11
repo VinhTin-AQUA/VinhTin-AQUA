@@ -7,7 +7,7 @@
             <div class="flex items-center gap-3">
                 <div class="relative">
                     <img
-                        [src]="meService.me().avatar"
+                        [src]="meService.currentAvatar()"
                         alt="Avatar"
                         class="w-10 h-10 rounded-full avatar-ring-custom shadow-md transition-all hover:scale-105 cursor-pointer"
                     />
@@ -116,7 +116,7 @@
         <div class="flex items-center justify-between p-4 divider-custom border-b">
             <div class="flex items-center gap-3">
                 <img
-                    [src]="meService.me().avatar"
+                    [src]="meService.currentAvatar()"
                     alt="Avatar"
                     class="w-10 h-10 rounded-full avatar-ring-custom shadow-md"
                 />

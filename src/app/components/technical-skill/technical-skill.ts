@@ -13,17 +13,22 @@ export class TechnicalSkill {
         {
             name: 'Backend',
             icon: '🖥️',
-            items: ['ASP.NET Core', 'RESTful API', 'Entity Framework Core', 'LINQ'],
+            items: ['ASP.NET Core', 'RESTful API', 'Entity Framework Core', 'LINQ', 'Integration'],
+        },
+        {
+            name: 'Frontend',
+            icon: '🌐',
+            items: ['Angular', 'TypeScript', 'HTML', 'CSS'],
         },
         {
             name: 'Databases & Search Engines',
             icon: '⚙️',
-            items: ['SQL Server', 'PostgreSQL', 'MongoDB', 'Elasticsearch'],
+            items: ['SQL Server', 'PostgreSQL', 'MongoDB', 'Elasticsearch', 'Qdrant'],
         },
         {
             name: 'Messaging & Distributed Systems',
             icon: '🗄️',
-            items: ['RabbitMQ', 'MassTransit'],
+            items: ['RabbitMQ', 'MassTransit', 'Microservices'],
         },
         {
             name: 'Caching',
@@ -36,9 +41,9 @@ export class TechnicalSkill {
             items: ['Docker', 'Nginx', 'Git', 'Github Action'],
         },
         {
-            name: 'Frontend',
-            icon: '🌐',
-            items: ['Angular', 'TypeScript', 'HTML', 'CSS'],
+            name: 'Storage',
+            icon: '🔰',
+            items: ['MinIO', 'GarageS3'],
         },
         {
             name: 'App',
