@@ -122,3 +122,25 @@
             48px 48px;
     }
 }
+
+/* Animation cho các section được defer load */
+
+.section-enter {
+    opacity: 0;
+    transform: translateY(24px);
+
+    animation: sectionReveal 700ms ease-out forwards;
+    will-change: opacity, transform;
+}
+
+@keyframes sectionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

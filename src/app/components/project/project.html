@@ -3,12 +3,23 @@
     <!-- Main -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <section>
-            <div class="flex items-center justify-between mb-6">
-                <h2 class="text-3xl font-extrabold theme-title">Projects</h2>
+            <!-- <div class="flex items-center justify-between mb-6">
+                <h2 class="text-3xl font-extrabold theme-title"></h2>
                 <span class="text-sm theme-badge px-3 py-1 rounded-full">
-                    {{ projects.length }} projects
+                   
                 </span>
-            </div>
+            </div> -->
+
+        <!-- Header -->
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight theme-text-primary">
+                Projects
+            </h1>
+            <p class="mt-2 text-lg theme-text-muted"> {{ projects.length }} projects</p>
+            <div class="mt-4 h-1 w-24 mx-auto rounded-full theme-gradient-primary"></div>
+        </header>
+
+
             <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 @for (project of projects; track project.id) {

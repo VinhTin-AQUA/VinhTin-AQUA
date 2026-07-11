@@ -8,6 +8,14 @@
     color: var(--foreground);
 }
 
+.theme-text-muted {
+    color: var(--brightBlack);
+}
+
+.theme-gradient-primary {
+    background: linear-gradient(135deg, var(--blue), var(--magenta));
+}
+
 .theme-text-secondary {
     color: var(--white);
 }

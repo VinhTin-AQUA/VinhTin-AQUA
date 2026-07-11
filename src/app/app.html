@@ -12,13 +12,37 @@
 
             <app-about-me id="about-me"></app-about-me>
 
-            <app-career id="career"></app-career>
+            @defer (on viewport; prefetch on idle) {
+                <div class="section-enter">
+                    <app-career id="career"></app-career>
+                </div>
+            } @placeholder {
+                <div class="min-h-75"></div>
+            }
 
-            <app-technical-skill id="technical-skill"></app-technical-skill>
+            @defer (on viewport; prefetch on idle) {
+                <div class="section-enter">
+                    <app-technical-skill id="technical-skill"></app-technical-skill>
+                </div>
+            } @placeholder {
+                <div class="min-h-75"></div>
+            }
 
-            <app-project id="project"></app-project>
+            @defer (on viewport; prefetch on idle) {
+                <div class="section-enter">
+                    <app-project id="project"></app-project>
+                </div>
+            } @placeholder {
+                <div class="min-h-75"></div>
+            }
 
-            <app-footer></app-footer>
+            @defer (on viewport; prefetch on idle) {
+                <div class="section-enter">
+                    <app-footer></app-footer>
+                </div>
+            } @placeholder {
+                <div class="min-h-75"></div>
+            }
         </div>
     </div>
 }

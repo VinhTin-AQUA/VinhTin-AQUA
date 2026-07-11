@@ -98,23 +98,14 @@
     color: var(--white);
 }
 
-/* ==========================================================
-   Scrollbar
-   ========================================================== */
-
-::-webkit-scrollbar {
-    width: 8px;
+.theme-text-primary {
+    color: var(--foreground);
 }
 
-::-webkit-scrollbar-track {
-    background: var(--brightWhite);
+.theme-text-muted {
+    color: var(--brightBlack);
 }
 
-::-webkit-scrollbar-thumb {
-    background: var(--brightBlack);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--black);
+.theme-gradient-primary {
+    background: linear-gradient(135deg, var(--blue), var(--magenta));
 }
